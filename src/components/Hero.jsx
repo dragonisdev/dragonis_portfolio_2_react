@@ -19,7 +19,7 @@ function HeroSection() {
   return (
     
     <div>
-      <div className='flex md:flex-row flex-col max-w-[1400px] justify-between items-center pt-6'>
+      <div className='flex md:flex-row flex-col max-w-[1400px] justify-between items-center md:pt-6 pt-0'>
           <div className='mx-6 my-7 text-center sm:text-left'>  
               <h1 className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full  xs:text-[52px] text-center'>
                   Hey guys, I’m  
