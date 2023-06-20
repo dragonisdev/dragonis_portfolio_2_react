@@ -19,8 +19,8 @@ function HeroSection() {
   return (
     
     <div>
-      <div className='flex md:flex-row flex-col max-w-[1400px] justify-between items-center md:pt-6 pt-0'>
-          <div className='mx-6 my-7 text-center sm:text-left'>  
+      <div className='flex md:flex-row flex-col max-w-[1400px] min-h-[520px] justify-between items-center md:pt-6 pt-0 '>
+          <div className='mx-6 my-7 text-center  sm:text-left'>  
               <h1 className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full  xs:text-[52px] text-center'>
                   Hey guys, I’m  
               </h1>
@@ -39,13 +39,13 @@ function HeroSection() {
       
       <div className="relative w-full h-full  ss:pt-28 pt-12 banner">
         <img className='rounded-lg ' src="/group10.png" alt="banner" /> 
-        <h1 id="releases" className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full  xs:text-[52px] text-center text-dragonis pt-10'>My Releases</h1>
+        <h1 id="releases" className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full  xs:text-[52px] text-center text-dragonis pt-10 '>My Releases</h1>
         
         <div className='text-white font-semibold pt-2 text-[18px]'>Feel free to download my songs and the cover artworks :D</div>
       </div>
       
-      <div  className="page2 pb-28 ">
-        <div className='art-box'>
+      <div  className="page2 flex content-center pb-28 ">
+        <div className='art-box flex content-center'>
           
        
 

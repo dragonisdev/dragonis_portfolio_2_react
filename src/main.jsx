@@ -10,7 +10,7 @@ import Threed from "@/pages/3D"
 import Contact from "@/pages/Contact"
 import Samples from './pages/Samples'
 import Webdev from './pages/Webdev'
-
+import { Analytics } from '@vercel/analytics/react';
 
 
 
@@ -24,7 +24,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Route path='/3D' element={<Threed/>}></Route>
       <Route path='/Contact' element={<Contact/>}></Route>
       <Route path='/Samples' element={<Samples/>}></Route>
-      
+   
 
     </Routes>
     <Links/>
