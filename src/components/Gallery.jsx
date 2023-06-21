@@ -10,35 +10,30 @@ const importImages = () => {
 };
 
 function Gallery() {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    const loadImages = async () => {
-      try {
-        const importedImages = await importImages();
-        const imageUrls = importedImages.map((image) => image.default);
-        const shuffledData = imageUrls.map((imgSrc, index) => ({
-          id: index + 1,
-          imgSrc,
-        })).sort(() => Math.random() - 0.5);
-        setData(shuffledData);
-      } catch (error) {
-        console.error('Error loading images:', error);
-      }
-    };
-
-    loadImages();
-  }, []);
-
-  return (
-    <div className="gallery">
-      {data.map((item) => (
-        <div className="pics py-2" key={item.id}>
-          <img src={item.imgSrc} className="w-full" alt={`Image ${item.id}`} />
-        </div>
-      ))}
-    </div>
-  );
-}
-
-export default Gallery;
+    const [data, setData] = useState([]);
+  
+    useEffect(() => {
+      const importImages = async () => {
+        const importedImages = [];
+        for (let i = 1; i <= 58; i++) {
+          const image = await import(`@/gallery/${i}.png`);
+          importedImages.push(image.default);
+        }
+        setData(importedImages.map((imgSrc, index) => ({ id: index + 1, imgSrc })));
+      };
+  
+      importImages();
+    }, []);
+  
+    return (
+      <div className="gallery">
+        {data.map((item) => (
+          <div className="pics py-2" key={item.id}>
+            <img src={item.imgSrc} className="w-full" alt={`Image ${item.id}`} />
+          </div>
+        ))}
+      </div>
+    );
+  }
+  
+  export default Gallery;
