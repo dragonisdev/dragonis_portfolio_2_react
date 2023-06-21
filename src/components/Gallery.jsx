@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import close from "@/assets/close.png"
+import Spinner from '@/components/Spinner'
 // Generate an array of image import promises dynamically
 function Gallery() {
     const [data, setData] = useState([]);
@@ -38,30 +39,30 @@ function Gallery() {
       importImages();
     }, []);
   
-    if (isLoading) {
-      return (
-        <div className="spinner-container">
-          <div className="spinner" />
-        </div>
-      );
-    }
+    
 
     
     
   
     return (
     <>
-        <div className={model? "model open" : "model"}>
-            <img src={tempimgSrc}/>
-            <img className="close2" src={close} onClick={() => setModel(false)}/>
-        </div>
-        <div className="gallery">
-            {data.map((item) => (
-            <div className="pics py-2" key={item.id} onClick={() => getImg(item.imgSrc)}>
-                <img src={item.imgSrc} className="w-full" alt={`Image ${item.id}`} />
-            </div>
-            ))}
-        </div>
+        <div className={model ? 'model open' : 'model'}>
+        {isLoading ? (
+          <Spinner/>
+        ) : (
+          <>
+            <img src={tempimgSrc} />
+            <img className="close2" src={close} onClick={() => setModel(false)} />
+          </>
+        )}
+      </div>
+      <div className="gallery">
+        {data.map((item) => (
+          <div className="pics py-2" key={item.id} onClick={() => getImg(item.imgSrc)}>
+            <img src={item.imgSrc} className="w-full" alt={`Image ${item.id}`} />
+          </div>
+        ))}
+      </div>
     </>
     );
   }
