@@ -1,14 +1,24 @@
 import React, { useState, useEffect } from 'react';
-
+import close from "@/assets/close.png"
 // Generate an array of image import promises dynamically
 function Gallery() {
     const [data, setData] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
-  
+    const [model, setModel] = useState(false)
+    const [tempimgSrc, setTempImgSrc] = useState('')
+
+
+    const getImg = (imgSrc) => {
+        setTempImgSrc(imgSrc)
+        setModel(true)
+        console.warn(imgSrc)
+
+    }
+
     useEffect(() => {
       const importImages = async () => {
         const importPromises = [];
-        for (let i = 1; i <= 21; i++) {
+        for (let i = 1; i <= 58; i++) {
           importPromises.push(import(`@/gallery/${i}.png`));
         }
         try {
@@ -35,15 +45,24 @@ function Gallery() {
         </div>
       );
     }
+
+    
+    
   
     return (
-      <div className="gallery">
-        {data.map((item) => (
-          <div className="pics py-2" key={item.id}>
-            <img src={item.imgSrc} className="w-full" alt={`Image ${item.id}`} />
-          </div>
-        ))}
-      </div>
+    <>
+        <div className={model? "model open" : "model"}>
+            <img src={tempimgSrc}/>
+            <img className="close2" src={close} onClick={() => setModel(false)}/>
+        </div>
+        <div className="gallery">
+            {data.map((item) => (
+            <div className="pics py-2" key={item.id} onClick={() => getImg(item.imgSrc)}>
+                <img src={item.imgSrc} className="w-full" alt={`Image ${item.id}`} />
+            </div>
+            ))}
+        </div>
+    </>
     );
   }
   
