@@ -5,6 +5,8 @@ import Contact from "@/pages/Contact";
 import {Link} from 'react-router-dom'
 import Loading from '@/components/Loading';
 import line from "@/assets/line.png"
+import {useSpring, animated} from "react-spring"
+
 
 const scrollToReleases = () => {
   const releasesElement = document.getElementById('releases');
@@ -14,13 +16,23 @@ const scrollToReleases = () => {
 
 
 function HeroSection() {
+  const [flip, setFlip] = useState(false);
+  const props = useSpring({
+    to: { opacity: 1},
+    from: { opacity: 0},
+    reset: true,
+    reverse: flip,
+    delay: 1000,
+    
+
   
+  })
 
   return (
     
     <div>
       <div className='flex md:flex-row flex-col max-w-[1400px] min-h-[520px] justify-between items-center md:pt-6 pt-0 '>
-          <div className='mx-6 my-7 text-center  sm:text-left'>  
+          <animated.div style = {props}><div className='mx-6 my-7 text-center  sm:text-left'>  
               <h1 className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full  xs:text-[52px] text-center'>
                   Hey guys, I’m  
               </h1>
@@ -30,27 +42,28 @@ function HeroSection() {
               </p>
               <Link><button className='button-main  w-full sm:w-fit font-poppins font-semibold btn px-5 py-2 my-5 sm:w-1/3 rounded-lg' onClick={scrollToReleases}>My Releases</button></Link>
               <Link to='/Contact'><button className='button-secondary ml-0 w-full sm:w-fit font-poppins font-semibold btn px-5 py-2 sm:ml-12 sm:w-1/3 rounded-lg'>About Me</button></Link>
-          </div>
+          </div></animated.div>
+
           
           <div >
           <Logo />
           </div>
       </div>
       
-      <div className="relative w-full h-full  ss:pt-28 pt-12 banner">
-        <img className='rounded-lg ' src="/group10.png" alt="banner" /> 
+      <animated.div style = {props}><img className='rounded-lg ' src="/group10.png" alt="banner" /><div className="relative w-full h-full  ss:pt-28 pt-12 banner">
+       
         <h1 id="releases" className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full  xs:text-[52px] text-center text-dragonis pt-10 '>My Releases</h1>
         
         <div className='text-white font-semibold pt-2 text-[18px]'>Feel free to download my songs and the cover artworks :D</div>
-      </div>
+      </div></animated.div>
       
-      <div  className="page2 flex content-center pb-28 ">
+      <div className="page2 flex content-center pb-28 ">
         <div className='art-box flex content-center'>
           
        
 
 
-          <div className='art'>
+          <div  className=' art'>
             <a href="https://fanlink.to/journey-to-windrise" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/Journey.png"/></a>
             <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Journey to Windrise</h6>
             <div className='description'>

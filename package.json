@@ -15,10 +15,12 @@
     "@splinetool/react-spline": "^2.2.5",
     "@splinetool/runtime": "^0.9.168",
     "@vercel/analytics": "^1.0.1",
+    "aos": "^2.3.4",
     "hamburger-react": "^2.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.6.2"
+    "react-router-dom": "^6.6.2",
+    "react-spring": "^9.7.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

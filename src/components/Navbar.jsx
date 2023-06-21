@@ -18,16 +18,25 @@ function nav() {
   const handleToggle = () => {
     setIsOpen(!isOpen);
     setToggle(!toggle);
+    if (!isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
   };
+ 
 
   const handleLinkClick = () => {
     setIsOpen(false);
+    setToggle(false);
+    document.body.style.overflow = 'unset'
   }
 
   
+  
 
   return (
-    <nav >
+    <nav className='navbar '>
       {/* MOBILE NAV */}
       <div>
 
@@ -60,7 +69,7 @@ function nav() {
         {/* DESKTOP NAV */}
         <div className="w-full flex pb-16 justify-between items-center navbar px-0">
           <Link to="/">
-            <img src={logo} alt="logo" className="" />
+            <img src={logo} alt="logo" className="" onClick={handleLinkClick}/>
           </Link>
 
           <ul className={`text-dimWhite list-none sm:flex hidden justify-end items-center flex-1 font-poppins font-semibold text-[16px]`}>
