@@ -21,7 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Routes>
       <Route path='/' element={<HeroSection/>}></Route>
       <Route path='/Webdev' element={<Webdev/>}></Route>
-      <Route path='/' element={<Threed/>}></Route>
+      <Route path='/3D' element={<Threed/>}></Route>
       <Route path='/Contact' element={<Contact/>}></Route>
       <Route path='/Samples' element={<Samples/>}></Route>
    

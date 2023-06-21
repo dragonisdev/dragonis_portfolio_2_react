@@ -18,7 +18,9 @@ const scrollToReleases = () => {
 function Threed() {
   return (
     <div className=' md:pt-6'>
-      <div className='background flex md:flex-row flex-col max-w-[1400px] min-h-[520px] justify-between items-center '>
+      <div className='bg-cover bg-center flex md:flex-row flex-col max-w-[1400px] min-h-[520px] justify-between items-center ' style={{
+    backgroundImage: "url('./8.png')",
+  }}>
 
           <div className='w-[35%] mx-6 my-6 '>
             <img className='rounded-3xl' src={nftman}/>
@@ -44,7 +46,7 @@ function Threed() {
 
       <h1 id="gallery" className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full  xs:text-[52px] text-center text-dragonis pb-14 ss:pt-28 pt-10'>My Gallery</h1>
       <div >
-        <Gallery />
+        
       </div>
       
 
