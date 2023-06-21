@@ -1,43 +1,42 @@
 import React, { useState, useEffect } from 'react';
-import Spinner from './Spinner'; // Import a loading spinner component
 
-function importImages() {
+// Generate an array of image import promises dynamically
+const importImages = () => {
   const importPromises = [];
-  for (let i = 1; i <= 21; i++) {
+  for (let i = 1; i <= 58; i++) {
     importPromises.push(import(`@/gallery/${i}.png`));
   }
   return Promise.all(importPromises);
-}
+};
 
 function Gallery() {
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    async function loadImages() {
-      const importedImages = await importImages();
-      const imageUrls = importedImages.map((image) => image.default);
-      const shuffledData = imageUrls.map((url, index) => ({
-        id: index + 1,
-        imgSrc: url,
-      }));
-      setData(shuffledData);
-      setLoading(false);
-    }
+    const loadImages = async () => {
+      try {
+        const importedImages = await importImages();
+        const imageUrls = importedImages.map((image) => image.default);
+        const shuffledData = imageUrls.map((imgSrc, index) => ({
+          id: index + 1,
+          imgSrc,
+        })).sort(() => Math.random() - 0.5);
+        setData(shuffledData);
+      } catch (error) {
+        console.error('Error loading images:', error);
+      }
+    };
+
     loadImages();
   }, []);
 
   return (
-    <div className='gallery'>
-      {loading ? (
-        <Spinner /> // Display a loading spinner component while images are being loaded
-      ) : (
-        data.map((item) => (
-          <div className='pics' key={item.id}>
-            <img src={item.imgSrc} alt={`Image ${item.id}`} />
-          </div>
-        ))
-      )}
+    <div className="gallery">
+      {data.map((item) => (
+        <div className="pics py-2" key={item.id}>
+          <img src={item.imgSrc} className="w-full" alt={`Image ${item.id}`} />
+        </div>
+      ))}
     </div>
   );
 }

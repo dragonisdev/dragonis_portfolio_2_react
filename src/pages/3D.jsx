@@ -18,6 +18,8 @@ function Threed() {
       </div>
 
 
+      <h1 id="releases" className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full  xs:text-[52px] text-center text-dragonis pt-10 pb-14'>My Gallery</h1>
+
       <Gallery/>
 
     </div>
