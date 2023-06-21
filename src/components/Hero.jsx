@@ -36,7 +36,7 @@ function HeroSection() {
               <h1 className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full  xs:text-[52px] text-center'>
                   Hey guys, I’m  
               </h1>
-              <Link to='/'><img src={logo} className="w-full max-w-[550px]"/></Link>
+              <Link to='/'><img src={logo} className="w-full max-w-[550px] xs:mb-0 mb-4"/></Link>
               <p className='font-semibold  text-white text-[18px] max-w-[47ch]'>
               I’m in love with dubstep and anime girls. I produce music, create 3D artworks, code in my bedroom and hit the gym every day. I'm always on the chase for bluer skies and puffier clouds.
               </p>
@@ -50,9 +50,10 @@ function HeroSection() {
           </div>
       </div>
       
-      <animated.div style = {props}><img className='rounded-lg ' src="/group10.png" alt="banner" /><div className="relative w-full h-full  ss:pt-28 pt-12 banner">
+      <animated.div style = {props}><img className='rounded-lg ' src="/group10.png" alt="banner" />
+      <div className="relative w-full h-full  ss:pt-28 pt-12 banner">
        
-        <h1 id="releases" className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full  xs:text-[52px] text-center text-dragonis pt-10 '>My Releases</h1>
+        <h1 id="releases" className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full  xs:text-[52px] text-center text-dragonis pt-2 '>My Releases</h1>
         
         <div className='text-white font-semibold pt-2 text-[18px]'>Feel free to download my songs and the cover artworks :D</div>
       </div></animated.div>

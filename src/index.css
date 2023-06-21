@@ -10,16 +10,31 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-
+    
 }
 
+
+.background {
+  background-image: url('./8.png');
+  background-size: cover;
+  background-position: center;
+  
+}
+
+
 * {
-    margin: 0;
-    padding: 0;
-    background-color: #110516;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-    
+  margin: 0;
+  padding: 0;
+  
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #110516;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 .headline-1 {
@@ -62,10 +77,47 @@
     transition: transform 300ms ease-in-out;
 }
 
-.button-main:hover::before,
+
 .button-main:hover::before {
     transform: scaleX(1);
 }
+
+.button-main2 {
+  background-color: var(--background-color);
+  border-radius: 5px;
+  font-size: 20px;
+ 
+  color: white;  
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  --background-color: #B45EDC;
+  --border-size: 2px;
+  --accent-color: rgb(255, 85, 85);
+  z-index: -0;
+ 
+}
+
+.button-main2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: var(--accent-color);
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 300ms ease-in-out;
+}
+
+
+.button-main2:hover::before {
+  transform: scaleX(1);
+}
+
 
 
 .list-none li:hover {
@@ -237,7 +289,9 @@
     margin: 0;
     opacity: 50%;
     z-index: 100;
+    background-color: #110516;
     
+
   }
   
 @media screen and (max-width:768px) {
@@ -295,7 +349,9 @@
 }
 
 
+
 .mobilenav {
+  background-color: #110516;
   left: 0;
   top: 120px;
   position: absolute;

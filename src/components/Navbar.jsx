@@ -36,7 +36,7 @@ function nav() {
   
 
   return (
-    <nav className='navbar '>
+    <nav className='navbar'>
       {/* MOBILE NAV */}
       <div>
 
