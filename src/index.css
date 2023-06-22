@@ -373,7 +373,7 @@ html, body {
 
 .banner3d {
   border-radius: 3rem;
-  
+  transition: all 0.1s ease-in-out;
 }
 
 .banner3d:hover {
@@ -381,9 +381,30 @@ html, body {
   opacity: 80%;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  
+}
 
+.overlay p {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
 
-
+.image-container {
+  position: relative;
+  display: inline-block;
+}
 
 
 
