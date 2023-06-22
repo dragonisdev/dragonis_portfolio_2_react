@@ -1,4 +1,3 @@
-
 import Gallery from '@/components/Gallery'
 import React, { useEffect, useState } from 'react'
 import logo from "@/assets/Dragonis_text.png"
@@ -9,16 +8,72 @@ import Loading from '@/components/Loading';
 import line from "@/assets/line.png"
 import {useSpring, animated} from "react-spring"
 import nftman from "@/assets/3.png"
+import Logos3D from "@/components/logos3d"
 
+import bb from "@/assets/bb.png"
+import aa from "@/assets/aa.png"
+import aaGif from '@/assets/cc.gif';
+import bbGif from '@/assets/dd.gif';
 
 const scrollToReleases = () => {
   const releasesElement = document.getElementById('gallery');
   releasesElement.scrollIntoView({ behavior: 'smooth' });
 };
 
-
-
 function Threed() {
+  const [isImage1Hovered, setImage1Hovered] = useState(false);
+  const [isImage2Hovered, setImage2Hovered] = useState(false);
+  const [image1Size, setImage1Size] = useState({ width: 0, height: 0 });
+  const [image2Size, setImage2Size] = useState({ width: 0, height: 0 });
+  const [image1GifLoaded, setImage1GifLoaded] = useState(false);
+  const [image2GifLoaded, setImage2GifLoaded] = useState(false);
+
+  useEffect(() => {
+    const image1 = new Image();
+    const image2 = new Image();
+
+    image1.src = bb;
+    image2.src = aa;
+
+    image1.onload = () => {
+      setImage1Size({ width: image1.width, height: image1.height });
+    };
+
+    image2.onload = () => {
+      setImage2Size({ width: image2.width, height: image2.height });
+    };
+
+    const gif1 = new Image();
+    const gif2 = new Image();
+
+    gif1.src = bbGif;
+    gif2.src = aaGif;
+
+    gif1.onload = () => {
+      setImage1GifLoaded(true);
+    };
+
+    gif2.onload = () => {
+      setImage2GifLoaded(true);
+    };
+  }, []);
+
+  const handleImage1Hover = () => {
+    setImage1Hovered(true);
+  };
+
+  const handleImage1Leave = () => {
+    setImage1Hovered(false);
+  };
+
+  const handleImage2Hover = () => {
+    setImage2Hovered(true);
+  };
+
+  const handleImage2Leave = () => {
+    setImage2Hovered(false);
+  };
+
   const [flip, setFlip] = useState(false);
   const props = useSpring({
     to: { opacity: 1},
@@ -26,44 +81,97 @@ function Threed() {
     reset: true,
     reverse: flip,
     delay: 500,
-    
+  });
 
-  
-  })
   return (
-    <animated.div style = {props}><div className=' md:pt-6'>
-       <div className='bg-cover bg-center flex md:flex-row flex-col max-w-[1400px] min-h-[520px] justify-between items-center ' style={{backgroundImage: "url('./8.png')",}}>
+    <animated.div style={props}>
+      <div className=''>
+        <Logos3D />
 
-          <div className='w-[35%] mx-6 my-6 '>
+        <div className='bg-cover bg-center flex md:flex-row flex-col max-w-[1400px] min-h-[520px] justify-between items-center ' style={{backgroundImage: "url('./8.png')",}}>
+          <div className='md:w-[35%] w-[45%] mx-6 my-6 '>
             <img className='rounded-3xl' src={nftman}/>
           </div>
-          <div className='mx-6 my-7 text-center  sm:text-left'>  
-              <h1 className=' md:text-left font-poppins font-bold ss:text-[64px] text-[29px] text-white xs:leading-[80px] leading-[40px] w-full  xs:text-[52px] text-center'>
-                  Hey guys, I'm
-              </h1>
-              <h1 className='text-dragonis  md:text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[60px] w-full  xs:text-[52px] text-center'>
-                  a 3D Artist
-              </h1>
-              
-              <p className='font-semibold  text-white text-[18px] max-w-[44ch]'>
-              Welcome to my 3D art portfolio! I create captivating mockup promos for VST plugins, develop visually stunning product demonstrations for startups, and craft eye-catching visual advertisements for casinos. 
-              </p>
-              <Link><button className='button-main2  w-full sm:w-fit font-poppins font-semibold btn px-5 py-2 my-5 rounded-lg' onClick={scrollToReleases}>My Gallery</button></Link>
-              
-              <Link to='/Contact'><button className='button-secondary ml-0 w-full sm:w-fit font-poppins font-semibold btn px-5 py-2 sm:ml-12 sm:w-1/3 rounded-lg'>Hire Me</button></Link>
-              
+          <div className='mx-6 md:my-7 mb-7 text-center  sm:text-left'>
+            <h1 className=' md:text-left font-poppins font-bold ss:text-[64px] text-[29px] text-white xs:leading-[80px] leading-[40px] w-full  xs:text-[52px] text-center'>
+              Hey guys, I'm
+            </h1>
+            <h1 className='text-dragonis  md:text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[60px] w-full  xs:text-[52px] text-center'>
+              a 3D Artist
+            </h1>
+            <p className='font-semibold  text-white text-[18px] max-w-[44ch]'>
+              Welcome to my 3D art portfolio! I create captivating mockup promos for VST plugins, develop visually stunning product demonstrations for startups, and craft eye-catching visual advertisements for casinos.
+            </p>
+            <Link><button className='button-main2  w-full sm:w-fit font-poppins font-semibold btn px-5 py-2 my-5 rounded-lg' onClick={scrollToReleases}>My Gallery</button></Link>
+            <Link to='/Contact'><button className='button-secondary ml-0 w-full sm:w-fit font-poppins font-semibold btn px-5 py-2 sm:ml-12 sm:w-1/3 rounded-lg'>Hire Me</button></Link>
           </div>
+        </div>
+
+        <div className='pt-12'>
+          <div className='image-container'>
+            {image1GifLoaded ? (
+              <img
+                className='banner3d'
+                src={isImage1Hovered ? bbGif : bb}
+                onMouseEnter={handleImage1Hover}
+                onMouseLeave={handleImage1Leave}
+                alt='Image 1'
+                width={image1Size.width}
+                height={image1Size.height}
+              />
+            ) : (
+              <img
+                className='banner3d'
+                src={bb}
+                onMouseEnter={handleImage1Hover}
+                onMouseLeave={handleImage1Leave}
+                alt='Image 1'
+                width={image1Size.width}
+                height={image1Size.height}
+              />
+            )}
+          </div>
+        </div>
+
+        <div className='pt-12'>
+          <div className='image-container'>
+            {image2GifLoaded ? (
+              <img
+                className='banner3d'
+                src={isImage2Hovered ? aaGif : aa}
+                onMouseEnter={handleImage2Hover}
+                onMouseLeave={handleImage2Leave}
+                alt='Image 2'
+                width={image2Size.width}
+                height={image2Size.height}
+              />
+            ) : (
+              <img
+                className='banner3d'
+                src={aa}
+                onMouseEnter={handleImage2Hover}
+                onMouseLeave={handleImage2Leave}
+                alt='Image 2'
+                width={image2Size.width}
+                height={image2Size.height}
+              />
+            )}
+          </div>
+        </div>
+
+        <div className="relative w-full h-full  ss:pt-28 pt-12 banner pb-4">
+          <h1 id='gallery' className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full  xs:text-[52px] text-center text-dragonis  '>
+            My Gallery
+          </h1>
+          <div className='text-white font-semibold pt-2 text-[18px]'>Welcome to my world and my escape</div>
+        </div>
+
+        <div className='pb-28 pt-2 mt-8'>
+          <Gallery/>
+        </div>
       </div>
-
-
-      <h1 id="gallery" className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full  xs:text-[52px] text-center text-dragonis pb-14 ss:pt-28 pt-10'>My Gallery</h1>
-      <div className='pb-28'>
-        <Gallery/>
-      </div>
-      
-
-    </div></animated.div>
-  )
+    </animated.div>
+  );
 }
 
-export default Threed
+export default Threed;

@@ -371,6 +371,21 @@ html, body {
   text-decoration: none;
 }
 
+.banner3d {
+  border-radius: 3rem;
+  
+}
+
+.banner3d:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
+
+
+
+
+
+
 
 .gallery{
   -webkit-column-count:3;

@@ -52,7 +52,7 @@ function HeroSection() {
           </div>
       </div>
       
-      <animated.div style = {props}><img className='rounded-lg ' src="/group10.png" alt="banner" />
+      <animated.div style = {props}><img className='rounded-lg pt-6' src="/group10.png" alt="banner" />
       <div className="relative w-full h-full  ss:pt-28 pt-12 banner">
        
         <h1 id="releases" className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full  xs:text-[52px] text-center text-dragonis pt-2 '>My Releases</h1>
@@ -60,7 +60,7 @@ function HeroSection() {
         <div className='text-white font-semibold pt-2 text-[18px]'>Feel free to download my songs and the cover artworks :D</div>
       </div></animated.div>
       
-      <animated.div style = {props}><div className="page2 flex content-center pb-28 ">
+      <animated.div style = {props}><div className="page2 flex content-center pb-28 pt-2">
         <div className='art-box flex content-center'>
           
        

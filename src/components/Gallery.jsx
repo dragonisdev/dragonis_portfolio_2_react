@@ -19,7 +19,7 @@ function Gallery() {
     useEffect(() => {
       const importImages = async () => {
         const importPromises = [];
-        for (let i = 1; i <= 58; i++) {
+        for (let i = 1; i <= 61; i++) {
           importPromises.push(import(`@/gallery/${i}.png`));
         }
         try {
