@@ -3,6 +3,9 @@ import emailjs from '@emailjs/browser';
 
 
 function Form() {
+
+
+  
   const serviceId = import.meta.env.VITE_SERVICE_ID;
   const templateId = import.meta.env.VITE_TEMPLATE_ID;
   const userId = import.meta.env.VITE_USER_ID;
@@ -12,10 +15,10 @@ function Form() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    e.target.reset();
+    
 
     emailjs
-      .sendForm(serviceId, templateId, e.target, userId)
+      .sendForm(serviceId, templateId, form.current, userId)
       .then((result) => {
         console.log(result.text);
         console.log('message sent');

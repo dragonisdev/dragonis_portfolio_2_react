@@ -599,7 +599,7 @@ html, body {
 
 
 .form-container {
-  max-width: 600px;
+  max-width: 700px;
   
   min-height: 400px;
   margin-top: 2rem;
@@ -624,7 +624,7 @@ html, body {
 }
 
 .form-input {
-  width: calc(100% - 40px);
+  width: calc(100% - 50px);
   
   height: 40px;
   padding: 10px;
@@ -635,8 +635,8 @@ html, body {
 }
 
 .form-textarea {
-  width: calc(100% - 40px);
-  min-height: 100px;
+  width: calc(100% - 50px);
+  min-height: 150px;
   padding: 10px;
   outline: none;
   border-radius: 5px;
