@@ -185,11 +185,11 @@ function Threed() {
           </div>
         </div>
 
-        <div className="relative w-full h-full ss:pt-28 pt-12 banner pb-4">
+        <div className="relative w-full h-full ss:pt-28 pt-12 banner pb-2">
           <h1 id='gallery' className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full xs:text-[52px] text-center text-dragonis'>
             My Gallery
           </h1>
-          <div className='text-white font-semibold pt-2 text-[18px]'>Welcome to my world and my escape</div>
+          <div className='text-white font-semibold pt-2 text-[18px]'></div>
         </div>
 
         <div>
