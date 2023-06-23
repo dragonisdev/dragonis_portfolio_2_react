@@ -6,7 +6,7 @@ import Contact from "@/pages/Contact";
 import { Link } from 'react-router-dom';
 import Loading from '@/components/Loading';
 import line from "@/assets/line.png";
-import { useSpring, animated } from "react-spring";
+import {useSpring, animated} from "react-spring"
 import nftman from "@/assets/3.png";
 import Logos3D from "@/components/logos3d";
 import Spinner from '@/components/Spinner';
@@ -22,6 +22,20 @@ const scrollToReleases = () => {
 };
 
 function Threed() {
+  const [flip, setFlip] = useState(false);
+  const props = useSpring({
+    to: { opacity: 1,
+          },
+    from: { opacity: 0,
+           },
+    reset: true,
+    reverse: flip,
+    delay: 500,
+    
+
+  
+  })
+
   const [isImage1Hovered, setImage1Hovered] = useState(false);
   const [isImage2Hovered, setImage2Hovered] = useState(false);
   const [image1Size, setImage1Size] = useState({ width: 0, height: 0 });
@@ -29,7 +43,9 @@ function Threed() {
   const [image1GifLoaded, setImage1GifLoaded] = useState(false);
   const [image2GifLoaded, setImage2GifLoaded] = useState(false);
   const [isGalleryLoaded, setGalleryLoaded] = useState(false); // Add a new state for gallery loading
-
+  
+  
+  
   useEffect(() => {
     const image1 = new Image();
     const image2 = new Image();
@@ -81,14 +97,7 @@ function Threed() {
     setImage2Hovered(false);
   };
 
-  const [flip, setFlip] = useState(false);
-  const props = useSpring({
-    to: { opacity: 1 },
-    from: { opacity: 0 },
-    reset: true,
-    reverse: flip,
-    delay: 500,
-  });
+  
 
   return (
     
@@ -100,13 +109,13 @@ function Threed() {
             <img className='rounded-3xl' src={nftman} />
           </div>
           <div className='mx-6 md:my-7 mb-7 text-center sm:text-left'>
-            <h1 className='md:text-left font-poppins font-bold ss:text-[64px] text-[29px] text-white xs:leading-[80px] leading-[40px] w-full xs:text-[52px] text-center'>
+            <h1 className='md:text-left font-poppins font-bold ss:text-[64px] text-[29px] text-white xs:leading-[80px] leading-[20px] w-full xs:text-[52px] text-center'>
               Hey guys, I'm
             </h1>
             <h1 className='text-dragonis md:text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[60px] w-full xs:text-[52px] text-center'>
               a 3D Artist
             </h1>
-            <p className='font-semibold text-white text-[18px] max-w-[44ch]'>
+            <p className='font-semibold text-white text-[18px] text-left max-w-[44ch]'>
               Welcome to my 3D art portfolio! I create captivating mockup promos for VST plugins, develop visually stunning product demonstrations for startups, and craft eye-catching visual advertisements for casinos.
             </p>
             <Link to='#gallery'><button className='button-main2 w-full sm:w-fit font-poppins font-semibold btn px-5 py-2 my-5 rounded-lg' onClick={scrollToReleases}>My Gallery</button></Link>
@@ -189,7 +198,7 @@ function Threed() {
           <h1 id='gallery' className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full xs:text-[52px] text-center text-dragonis'>
             My Gallery
           </h1>
-          <div className='text-white font-semibold pt-2 text-[18px]'></div>
+          <div className='text-white font-semibold pt-2 text-[18px]'>Welcome to my world, to my escape</div>
         </div>
 
         <div>

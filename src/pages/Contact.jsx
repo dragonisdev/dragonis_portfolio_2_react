@@ -7,6 +7,7 @@ import Frame from "@/assets/bhbs_frame.png"
 import Share from "@/assets/share2.png"
 import { Link } from "react-router-dom";
 import Form from "@/components/Form";
+import {useSpring, animated} from "react-spring"
 
 const scrollToReleases = () => {
   const releasesElements = document.getElementById('contact')
@@ -17,14 +18,27 @@ const scrollToReleases = () => {
 
 
 function About() {
+  const [flip, setFlip] = useState(false);
+  const props = useSpring({
+    to: { opacity: 1,
+          },
+    from: { opacity: 0,
+           },
+    reset: true,
+    reverse: flip,
+    delay: 500,
+    
+
+  
+  })
   const [count, setCount] = useState(0);
 
   return (
-    <div className="">
+    <animated.div style = {props}><div className="">
       <div className="gradientbackground flex lg:flex-row flex-col justify-center lg:justify-between items-center lg:py-6 pt-0  rounded-3xl " >
-        <img className="lg:ml-12 mx-6  py-2" src={Frame} />
+        <img className="lg:ml-12 mx-4 px-2 py-2 rounded-3xl" src={Frame} />
 
-        <div className="lg:mr-12 mx-6  mb-7 text-center lg:text-left ">
+        <div className="lg:mr-12 mx-6  mb-7 text-center lg:text-left">
           <h1 className="font-poppins font-bold ss:text-[70px] lg:text-[90px]  xs:text-[64px] text-[32px] text-white ss:leading-[100.8px] leading-[75px] w-full">
             About Me
           </h1>
@@ -33,22 +47,22 @@ function About() {
               "I lost the thought of life and love, to the wonders sky above" - Adrift
             </h3>
           </a>
-          <p className="font-medium opacity-90 text-white text-[18px] max-w-[59ch] pt-6">
+          <p className="font-medium opacity-90 text-white text-left text-[18px] max-w-[59ch] pt-6">
             I’m a relentless creative who's devoted to creating art and music. I'm in chase of the unattainable and even if I disappear before getting heard I'm really happy... <br />
             <br /> I'm happy because you're reading this. You, who's sitting behind a screen, witnessing my art. Thank you for being a part of my
-            journey, it means a lot to me. Truly. <br />
+            journey, it means a lot to me. Truly! <br />
             <br />
-            If there is a need, I offer a variety of services, from ghost production, 3D animation, to web development and taking out disposable garbage. I'm always down for a new challenge, so do not hesitate to contact me.<br />
+            I also offer a variety of services, from ghost production and 3D animation, to web development and taking out disposable garbage. I'm always down for a new challenge, so do not hesitate to contact me.<br />
             <br />
             You can message me below!
             
           </p>
-          <a href="https://open.spotify.com/artist/13z6RhXyaasGa9eeWxduuR?si=98d2GpxdS266aM8zBOfxMg"><button className='button-main3 w-full sm:w-1/3  font-poppins font-semibold btn px-5 py-2 my-5 rounded-lg' >Read More</button></a>
+          <a href="https://www.instagram.com/dragonis_music/"><button className='button-main3 w-full sm:w-1/3  font-poppins font-semibold btn px-5 py-2 my-5 rounded-lg' >Follow Me</button></a>
             <Link to='#contact'><button className='button-secondary ml-0 w-full sm:w-fit font-poppins font-semibold btn px-5 py-2 sm:ml-12 sm:w-1/3   rounded-lg' onClick={scrollToReleases}>Contact</button></Link>
         </div>
       </div>
 
-      <div className=" flex  flex-col justify-center  items-center pb-20">
+      <div className="  flex  flex-col justify-center  items-center pb-20">
           <h1 id="contact" className="text-dragonis font-poppins font-bold ss:text-[80px] lg:text-[90px]  xs:text-[64px] text-[32px] text-white ss:leading-[100.8px] leading-[75px] w-full ss:pt-20 pt-12">
             Contact Me
           </h1>
@@ -58,7 +72,7 @@ function About() {
           </div>
           
       </div>
-    </div>
+    </div></animated.div>
   );
 }
 

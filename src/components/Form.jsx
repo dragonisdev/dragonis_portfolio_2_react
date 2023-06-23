@@ -60,7 +60,7 @@ function Form() {
         </label>
         <textarea className="form-textarea" name="message" id="message" required />
 
-        <input className="form-submit button-main3 w-full sm:w-1/3  font-poppins font-semibold btn px-5 py-2 my-5 rounded-lg" type="submit" value="Send" />
+        <input className="form-submit button-main3 w-1/2 sm:w-1/3  font-poppins font-semibold btn px-5 py-2 my-5 rounded-lg" type="submit" value="Send" />
       </form>
     </div>
   )

@@ -7,6 +7,7 @@ import newgrounds from "@/assets/newgrounds.png"
 import tiktok from "@/assets/tiktok.png"
 import github from "@/assets/github.png"
 import discord from "@/assets/discord.png"
+import kick from "@/assets/kick1.png"
 
 export const navLinks = [
 
@@ -33,7 +34,8 @@ export const socials = [
         img: youtube,
         link: "https://www.youtube.com/channel/UCy1jiL3DNV8quI_MsxGh43w"
     },
-
+    
+    
    
 
     {
@@ -71,5 +73,7 @@ export const socials = [
         img: discord,
         link: "https://discord.gg/tyvUwCFujK"
     },
+
+    
 
 ]
