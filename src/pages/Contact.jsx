@@ -3,7 +3,7 @@ import HeroSection from "@/components/Hero";
 import '@/App.css'
 import Navbar from "@/components/Navbar"
 import Links from "@/components/Links"
-import Frame from "@/assets/bhbs_frame.png"
+import Frame from "@/assets/frame1.png"
 import Share from "@/assets/share2.png"
 import { Link } from "react-router-dom";
 import Form from "@/components/Form";
@@ -34,9 +34,9 @@ function About() {
   const [count, setCount] = useState(0);
 
   return (
-    <animated.div style = {props}><div className="">
-      <div className="gradientbackground flex lg:flex-row flex-col justify-center lg:justify-between items-center lg:py-6 pt-0  rounded-3xl " >
-        <img className="lg:ml-12 mx-4 px-2 py-2 rounded-3xl" src={Frame} />
+    <animated.div style = {props}><div className="md:pt-6 pt-0 ">
+      <div className="gradientbackground flex lg:flex-row flex-col justify-center lg:justify-between items-center lg:py-8  rounded-3xl " >
+        <img className="lg:ml-12 mx-4 px-2 py-4 rounded-3xl" src={Frame} />
 
         <div className="lg:mr-12 mx-6  mb-7 text-center lg:text-left">
           <h1 className="font-poppins font-bold ss:text-[70px] lg:text-[90px]  xs:text-[64px] text-[32px] text-white ss:leading-[100.8px] leading-[75px] w-full">
@@ -48,13 +48,13 @@ function About() {
             </h3>
           </a>
           <p className="font-medium opacity-90 text-white text-left text-[18px] max-w-[59ch] pt-6">
-            I’m a relentless creative who's devoted to creating art and music. I'm in chase of the unattainable and even if I disappear before getting heard I'm really happy... <br />
-            <br /> I'm happy because you're reading this. You, who's sitting behind a screen, witnessing my art. Thank you for being a part of my
+            I’m a relentless creative who's devoted to creating art and music. I'm in chase of the unattainable and even if I disappear before getting heard, I'm really happy... <br />
+            <br /> I'm happy because you're reading this! You, who's sitting behind a screen, witnessing my art and effort. Thank you for listening and being a part of my
             journey, it means a lot to me. Truly! <br />
             <br />
-            I also offer a variety of services, from ghost production and 3D animation, to web development and taking out disposable garbage. I'm always down for a new challenge, so do not hesitate to contact me.<br />
+            I also offer a variety of services, from music production, 3D animation and one-on-one lessons, to web development and consulting; I'm always down for a new challenge, so do not hesitate to contact me!<br />
             <br />
-            You can message me below!
+            You can message me below...
             
           </p>
           <a href="https://www.instagram.com/dragonis_music/"><button className='button-main3 w-full sm:w-1/3  font-poppins font-semibold btn px-5 py-2 my-5 rounded-lg' >Follow Me</button></a>

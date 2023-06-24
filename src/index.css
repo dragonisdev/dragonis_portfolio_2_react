@@ -267,6 +267,19 @@ html, body {
     
   }
 
+  .nft-man {
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    
+  }
+  .nft-man:hover {
+    opacity: 100%;
+    transform: scale(100%) translateY(-5px) translatex(-5px);
+    -webkit-box-shadow: 5px 5px 14px 5px rgba(104, 44, 120, 0.51);
+    box-shadow: 5px 5px 14px 5px rgba(104, 44, 120, 0.51);
+    rotate: -0.4deg;
+  }
+
   .description {
     display: flex;
     justify-content: center;
@@ -694,4 +707,49 @@ html, body {
     opacity: 0;
     visibility: hidden;
   }
+}
+
+
+.devbox {
+  border-radius: 3rem;
+  display: flex;
+  padding: 0% 3%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(128, 229, 230, 1), rgba(134, 41, 255, 0.0));
+  max-width: 500px;
+  
+  margin: 2rem 2rem;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1158px) {
+  .devdiv {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .devbox {
+    height: auto; /* Set height to auto for dynamic height */
+    max-height: 600px; /* Set a maximum height if necessary */
+  }
+}
+
+.devbox > * {
+  flex: 1;
+}
+
+.dev-art {
+  transition: all 0.25s ease-in-out;
+  padding-inline: 2rem;
+}
+
+.dev-art:hover {
+  cursor: pointer;
+  opacity: 100%;
+  transform: scale(105%) ;
+  
 }

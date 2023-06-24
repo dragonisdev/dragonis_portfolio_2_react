@@ -56,7 +56,7 @@ function nav() {
             </div>
             
             <div className="lg:hidden mobilenavlink">
-            <NavLink to='/Samples' className="link" onClick={handleLinkClick}>Samplepacks</NavLink>
+            <NavLink to='/Samples' className="link" onClick={handleLinkClick}>My Products</NavLink>
             </div>
             <div className="lg:hidden mobilenavlink">
               <NavLink to='/Contact' className="link" onClick={handleLinkClick}>Contact Me</NavLink>
@@ -80,7 +80,7 @@ function nav() {
               <NavLink to='/3D' className="link">3D Artist</NavLink>
             </li>
             <li className='mr-16'>
-              <NavLink to='/Samples' className="link">Samplepacks</NavLink>
+              <NavLink to='/Samples' className="link">My Products</NavLink>
             </li>
             <li>
               <NavLink to='/Contact' className="link">Contact Me</NavLink>
