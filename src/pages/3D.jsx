@@ -25,9 +25,9 @@ function Threed() {
   const [flip, setFlip] = useState(false);
   const props = useSpring({
     to: { opacity: 1,
-          },
+          translateX: '0%'},
     from: { opacity: 0,
-           },
+            translateX: '100%'},
     reset: true,
     reverse: flip,
     delay: 500,
@@ -103,11 +103,13 @@ function Threed() {
     
       <div>
         <Logos3D />
-
-        <div className='bg-cover bg-center flex md:flex-row flex-col max-w-[1400px] min-h-[520px] justify-between items-center' style={{ backgroundImage: "url('./8.png')" }}>
-          <div className='md:w-[35%] w-[45%] mx-6 my-6'>
-            <a href='https://www.instagram.com/dragonis_art/' target='blank'><img className='nft-man rounded-3xl' src={nftman} /></a>
+      <div className='pt-4'></div>
+      <div className=' bg-cover bg-center flex md:flex-row flex-col max-w-[1400px] min-h-[520px] justify-between items-center ' style={{ backgroundImage: "url('./8.png')" }}>
+      
+          <div className='md:w-[35%] w-[45%] mx-6 my-6 '>
+          <a href='https://www.instagram.com/dragonis_art/' target='blank'><img className='nft-man rounded-3xl' src={nftman} /></a>
           </div>
+          
           <div className='mx-6 md:my-7 mb-7 text-center sm:text-left'>
             <h1 className='md:text-left font-poppins font-bold ss:text-[64px] text-[29px] text-white xs:leading-[80px] leading-[20px] w-full xs:text-[52px] text-center'>
               Hey guys, I'm
@@ -204,7 +206,7 @@ function Threed() {
         <div>
           {/* Rest of the code... */}
           {isGalleryLoaded ? ( // Conditionally render the gallery component after images have finished loading
-            <div className='pb-28 pt-4 mt-8'>
+            <div className='pb-28 mb-10 pt-4 mt-8'>
               <Gallery />
             </div>
           ) : (

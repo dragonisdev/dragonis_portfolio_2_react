@@ -35,19 +35,20 @@ function Webdev() {
 
   return (
     <div className='max-w-[1400px] min-h-[520px]'>
-     <div className="flex  flex-col justify-center lg:justify-between items-center md:pt-14 pt-0  rounded-3xl " >
-          <h1 className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white  xs:leading-[80px] leading-[20px] w-full  xs:text-[52px] text-center'>
+      <animated.div style={props2}><div className=''>
+        <Technologies/>
+      </div></animated.div>
+      <animated.div style={props}><div className="flex  flex-col justify-center lg:justify-between items-center  rounded-3xl " >
+          <h1 className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white  xs:leading-[80px] leading-[40px] w-full  xs:text-[52px] text-center'>
                     Hey guys, I’m  
           </h1>
           
-          <h1 className='text-dragonis  font-poppins font-bold ss:text-[50px] text-[29px] text-white ss:leading-[100.8px] leading-[60px] w-full xs:text-[52px] text-center'>
+          <h1 className='text-dragonis  font-poppins font-bold ss:text-[50px] text-[29px] text-white xs:leading-[100.8px] leading-[40px] w-full xs:text-[52px] text-center'>
                 a Frontend Developer
           </h1>
       </div>
 
-      <div className='pt-4'>
-        <Technologies/>
-      </div>
+      </animated.div>
       
       
       
@@ -55,7 +56,7 @@ function Webdev() {
         
       {/*<h1 id="releases" className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full  xs:text-[52px] text-center text-dragonis  md:pt-12 pt-0'>Web Portfolio</h1>*/}
 
-      <div className="flex items-center justify-center pb-28 pt-4 ">
+      <div className="flex items-center justify-center pb-28 mb-10 pt-4 ">
         <div className='flex devdiv flex-wrap justify-between justify-center content-center'>
           
           
