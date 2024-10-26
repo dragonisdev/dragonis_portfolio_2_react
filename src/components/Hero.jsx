@@ -40,7 +40,7 @@ function HeroSection() {
               </h1>
               <Link to='/'><img src={logo} className="w-full max-w-[550px] xs:mb-0 mb-4"/></Link>
               <p className='font-semibold  text-white text-[18px] max-w-[47ch]'>
-              Welcome to my heavenly domain, where I produce music, create 3D artworks, code in my bedroom and hit the gym every day. I'm always on the chase for bluer skies and puffier clouds.
+              Welcome to my heavenly domain! Here, I produce EDM music, bring 3D art to life, and code in my dreams into reality - all from my bedroom. Join me on this journey in chase for bluer skies, and endless horizons together!
               </p>
               <Link><button className='button-main  w-full sm:w-fit font-poppins font-semibold btn px-5 py-2 my-5 sm:w-1/3 rounded-lg' onClick={scrollToReleases}>My Releases</button></Link>
               <Link to='/Contact'><button className='button-secondary ml-0 w-full sm:w-fit font-poppins font-semibold btn px-5 py-2 sm:ml-12 sm:w-1/3 rounded-lg'>About Me</button></Link>
@@ -65,6 +65,142 @@ function HeroSection() {
           
        
 
+          <div  className=' art'>
+            <a href="https://soundcloud.com/dragonis_music/nightrider-mastered-0dbtp-1" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/nightrider.png"/></a>
+            <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>nightrider</h6>
+            <div className='description'>
+              <a href="https://soundcloud.com/dragonis_music/nightrider-mastered-0dbtp-1" ><p className='highlight px-2'>Stream</p></a>
+              <img className="star" src='/star.png'/>
+              <a href="/songs/nightrider.mp3" download><p className='highlight px-2'>MP3</p></a>
+              <img className="star" src='/star.png'/>
+              <a href="/artworks/nightrider.png" target='blank'><p className='highlight px-2'>Artwork</p></a>
+              
+            </div>
+          </div>
+
+          <div  className=' art'>
+            <a href="https://fanlink.tv/seraph" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/seraph.png"/></a>
+            <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Seraph</h6>
+            <div className='description'>
+              <a href="https://fanlink.tv/seraph" ><p className='highlight px-2'>Stream</p></a>
+              <img className="star" src='/star.png'/>
+              <a href="/songs/seraph.mp3" download><p className='highlight px-2'>MP3</p></a>
+              <img className="star" src='/star.png'/>
+              <a href="/artworks/seraph.png" target='blank'><p className='highlight px-2'>Artwork</p></a>
+              
+            </div>
+          </div>
+
+          <div  className=' art'>
+            <a href="https://fanlink.tv/stay-here" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/stay_here.png"/></a>
+            <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Stay Here</h6>
+            <div className='description'>
+              <a href="https://fanlink.tv/stay-here" ><p className='highlight px-2'>Stream</p></a>
+              <img className="star" src='/star.png'/>
+              <a href="/songs/stay_here.mp3" download><p className='highlight px-2'>MP3</p></a>
+              <img className="star" src='/star.png'/>
+              <a href="/artworks/stay_here.png" target='blank'><p className='highlight px-2'>Artwork</p></a>
+              
+            </div>
+          </div>
+
+
+          <div  className=' art'>
+            <a href="https://soundcloud.com/dragonis_music/aria" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/aria.jpg"/></a>
+            <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Aria</h6>
+            <div className='description'>
+              <a href="https://soundcloud.com/dragonis_music/aria" ><p className='highlight px-2'>Stream</p></a>
+              <img className="star" src='/star.png'/>
+              <a href="/songs/aria.mp3" download><p className='highlight px-2'>MP3</p></a>
+              <img className="star" src='/star.png'/>
+              <a href="/artworks/aria.jpg" target='blank'><p className='highlight px-2'>Artwork</p></a>
+              
+            </div>
+          </div>
+
+
+          <div  className=' art'>
+            <a href="https://fanlink.tv/anchored" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/anchor.jpg"/></a>
+            <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Anchor</h6>
+            <div className='description'>
+              <a href="https://fanlink.tv/anchored" ><p className='highlight px-2'>Stream</p></a>
+              <img className="star" src='/star.png'/>
+              <a href="/songs/anchor.mp3" download><p className='highlight px-2'>MP3</p></a>
+              <img className="star" src='/star.png'/>
+              <a href="/artworks/anchor.jpg" target='blank'><p className='highlight px-2'>Artwork</p></a>
+              
+            </div>
+          </div>
+
+
+          <div  className=' art'>
+            <a href="https://fanlink.tv/epoch21" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/epoch.jpg"/></a>
+            <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Epoch</h6>
+            <div className='description'>
+              <a href="https://fanlink.tv/epoch21" ><p className='highlight px-2'>Stream</p></a>
+              <img className="star" src='/star.png'/>
+              <a href="/songs/epoch.mp3" download><p className='highlight px-2'>MP3</p></a>
+              <img className="star" src='/star.png'/>
+              <a href="/artworks/epoch.jpg" target='blank'><p className='highlight px-2'>Artwork</p></a>
+              
+            </div>
+          </div>
+
+
+          <div  className=' art'>
+            <a href="https://fanlink.to/caturday" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/caturday.png"/></a>
+            <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Caturday</h6>
+            <div className='description'>
+              <a href="https://fanlink.to/caturday" ><p className='highlight px-2'>Stream</p></a>
+              <img className="star" src='/star.png'/>
+              <a href="/songs/caturday.mp3" download><p className='highlight px-2'>MP3</p></a>
+              <img className="star" src='/star.png'/>
+              <a href="/artworks/caturday.png" target='blank'><p className='highlight px-2'>Artwork</p></a>
+              
+            </div>
+          </div>
+
+          <div  className=' art'>
+            <a href="https://fanlink.to/cryostasis" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/cryostasis.png"/></a>
+            <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Cryostasis</h6>
+            <div className='description'>
+              <a href="https://fanlink.to/cryostasis" ><p className='highlight px-2'>Stream</p></a>
+              <img className="star" src='/star.png'/>
+              <a href="/songs/cryostasis.mp3" download><p className='highlight px-2'>MP3</p></a>
+              <img className="star" src='/star.png'/>
+              <a href="/artworks/cryostasis.png" target='blank'><p className='highlight px-2'>Artwork</p></a>
+              
+            </div>
+          </div>
+
+          <div  className=' art'>
+            <a href="https://fanlink.to/twinkle_1" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/twinkle.png"/></a>
+            <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Twinkle</h6>
+            <div className='description'>
+              <a href="https://fanlink.to/twinkle_1" ><p className='highlight px-2'>Stream</p></a>
+              <img className="star" src='/star.png'/>
+              <a href="/songs/twinkle.mp3" download><p className='highlight px-2'>MP3</p></a>
+              <img className="star" src='/star.png'/>
+              <a href="/artworks/twinkle.png" target='blank'><p className='highlight px-2'>Artwork</p></a>
+              
+            </div>
+          </div>
+
+          
+
+          <div  className=' art'>
+            <a href="https://soundcloud.com/dragonis_music/hyperdrive-mastered-final-2" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/hyperdrive.png"/></a>
+            <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Hyperdrive</h6>
+            <div className='description'>
+              <a href="https://soundcloud.com/dragonis_music/hyperdrive-mastered-final-2" ><p className='highlight px-2'>Stream</p></a>
+              <img className="star" src='/star.png'/>
+              <a href="/songs/hyperdrive.mp3" download><p className='highlight px-2'>MP3</p></a>
+              <img className="star" src='/star.png'/>
+              <a href="/artworks/hyperdrive.png" target='blank'><p className='highlight px-2'>Artwork</p></a>
+              
+            </div>
+          </div>
+
 
           <div  className=' art'>
             <a href="https://fanlink.to/journey-to-windrise" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/Journey.png"/></a>
@@ -74,7 +210,7 @@ function HeroSection() {
               <img className="star" src='/star.png'/>
               <a href="/songs/Journey_to_windrise.mp3" download><p className='highlight px-2'>MP3</p></a>
               <img className="star" src='/star.png'/>
-              <a href="/releases/Journey.png" target='blank'><p className='highlight px-2'>Artwork</p></a>
+              <a href="/artworks/Journey.png" target='blank'><p className='highlight px-2'>Artwork</p></a>
               
             </div>
           </div>
@@ -337,17 +473,7 @@ function HeroSection() {
 
           
 
-          <div className='art'>
-            <a href="https://fanlink.to/falling-star-1" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/falling_star.png"/></a>
-            <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Falling Star</h6>
-            <div className='description'>
-              <a href="https://fanlink.to/falling-star-1" ><p className='highlight px-2'>Stream</p></a>
-              <img className="star" src='/star.png'/>
-              <a href="/songs/falling_star.mp3" download><p className='highlight px-2'>MP3</p></a>
-              <img className="star" src='/star.png'/>
-              <a href="/artworks/falling_star.png" target='blank'><p className='highlight px-2'>Artwork</p></a>
-            </div>
-          </div>
+          
 
           <div className='art'>
             <a href="https://open.spotify.com/album/4D1SpbFWYBQSMABSwkJCGD?si=bw5YnxiqS1WH312O_zmlmw" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/Outerspace.png"/></a>
