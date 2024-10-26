@@ -148,10 +148,10 @@ function HeroSection() {
 
 
           <div  className=' art'>
-            <a href="https://fanlink.to/caturday" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/caturday.png"/></a>
+            <a href="https://fanlink.tv/caturday" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/caturday.png"/></a>
             <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Caturday</h6>
             <div className='description'>
-              <a href="https://fanlink.to/caturday" ><p className='highlight px-2'>Stream</p></a>
+              <a href="https://fanlink.tv/caturday" ><p className='highlight px-2'>Stream</p></a>
               <img className="star" src='/star.png'/>
               <a href="/songs/caturday.mp3" download><p className='highlight px-2'>MP3</p></a>
               <img className="star" src='/star.png'/>
@@ -161,10 +161,10 @@ function HeroSection() {
           </div>
 
           <div  className=' art'>
-            <a href="https://fanlink.to/cryostasis" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/cryostasis.png"/></a>
+            <a href="https://fanlink.tv/cryostasis" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/cryostasis.png"/></a>
             <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Cryostasis</h6>
             <div className='description'>
-              <a href="https://fanlink.to/cryostasis" ><p className='highlight px-2'>Stream</p></a>
+              <a href="https://fanlink.tv/cryostasis" ><p className='highlight px-2'>Stream</p></a>
               <img className="star" src='/star.png'/>
               <a href="/songs/cryostasis.mp3" download><p className='highlight px-2'>MP3</p></a>
               <img className="star" src='/star.png'/>
@@ -174,10 +174,10 @@ function HeroSection() {
           </div>
 
           <div  className=' art'>
-            <a href="https://fanlink.to/twinkle_1" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/twinkle.png"/></a>
+            <a href="https://fanlink.tv/twinkle_1" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/twinkle.png"/></a>
             <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Twinkle</h6>
             <div className='description'>
-              <a href="https://fanlink.to/twinkle_1" ><p className='highlight px-2'>Stream</p></a>
+              <a href="https://fanlink.tv/twinkle_1" ><p className='highlight px-2'>Stream</p></a>
               <img className="star" src='/star.png'/>
               <a href="/songs/twinkle.mp3" download><p className='highlight px-2'>MP3</p></a>
               <img className="star" src='/star.png'/>
@@ -203,10 +203,10 @@ function HeroSection() {
 
 
           <div  className=' art'>
-            <a href="https://fanlink.to/journey-to-windrise" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/Journey.png"/></a>
+            <a href="https://fanlink.tv/journey-to-windrise" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/Journey.png"/></a>
             <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Journey to Windrise</h6>
             <div className='description'>
-              <a href="https://fanlink.to/journey-to-windrise" ><p className='highlight px-2'>Stream</p></a>
+              <a href="https://fanlink.tv/journey-to-windrise" ><p className='highlight px-2'>Stream</p></a>
               <img className="star" src='/star.png'/>
               <a href="/songs/Journey_to_windrise.mp3" download><p className='highlight px-2'>MP3</p></a>
               <img className="star" src='/star.png'/>
@@ -216,10 +216,10 @@ function HeroSection() {
           </div>
 
           <div className='art'>
-            <a href="https://fanlink.to/stargazing-in-liyue" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/stargazing.png"/></a>
+            <a href="https://fanlink.tv/stargazing-in-liyue" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/stargazing.png"/></a>
             <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Stargazing in Liyue</h6>
             <div className='description'>
-              <a href="https://fanlink.to/stargazing-in-liyue" ><p className='highlight px-2'>Stream</p></a>
+              <a href="https://fanlink.tv/stargazing-in-liyue" ><p className='highlight px-2'>Stream</p></a>
               <img className="star" src='/star.png'/>
               <a href="/songs/stargazing_in_liyue.mp3" download><p className='highlight px-2'>MP3</p></a>
               <img className="star" src='/star.png'/>
@@ -230,10 +230,10 @@ function HeroSection() {
 
           
           <div className='art'>
-            <a href="https://fanlink.to/adrift-above-watatsumi" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/Kokomi.png"/></a>
+            <a href="https://fanlink.tv/adrift-above-watatsumi" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/Kokomi.png"/></a>
             <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Adrift above Watatsumi</h6>
             <div className='description'>
-              <a href="https://fanlink.to/adrift-above-watatsumi" ><p className='highlight px-2'>Stream</p></a>
+              <a href="https://fanlink.tv/adrift-above-watatsumi" ><p className='highlight px-2'>Stream</p></a>
               <img className="star" src='/star.png'/>
               <a href="/songs/adrift_above_watatsumi.mp3" download><p className='highlight px-2'>MP3</p></a>
               <img className="star" src='/star.png'/>
@@ -244,10 +244,10 @@ function HeroSection() {
 
             
           <div className='art'>
-            <a href="https://fanlink.to/raid" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/raid.png"/></a>
+            <a href="https://fanlink.tv/raid" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/raid.png"/></a>
             <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Raid in Inazuma</h6>
             <div className='description'>
-              <a href="https://fanlink.to/raid" ><p className='highlight px-2'>Stream</p></a>
+              <a href="https://fanlink.tv/raid" ><p className='highlight px-2'>Stream</p></a>
               <img className="star" src='/star.png'/>
               <a href="/songs/raid_in_inazuma.mp3" download><p className='highlight px-2'>MP3</p></a>
               <img className="star" src='/star.png'/>
@@ -258,10 +258,10 @@ function HeroSection() {
 
 
           <div className='art'>
-            <a href="https://fanlink.to/nyah" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/nyah.png"/></a>
+            <a href="https://fanlink.tv/nyah" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/nyah.png"/></a>
             <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Nyah</h6>
             <div className='description'>
-              <a href="https://fanlink.to/nyah" ><p className='highlight px-2'>Stream</p></a>
+              <a href="https://fanlink.tv/nyah" ><p className='highlight px-2'>Stream</p></a>
               <img className="star" src='/star.png'/>
               <a href="/songs/nyah.mp3" download><p className='highlight px-2'>MP3</p></a>
               <img className="star" src='/star.png'/>
@@ -271,10 +271,10 @@ function HeroSection() {
           </div>
 
           <div className='art'>
-            <a href="https://fanlink.to/blonde-hair-and-blue-skies" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/blonde_hair_blue_skies.png"/></a>
+            <a href="https://fanlink.tv/blonde-hair-and-blue-skies" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/blonde_hair_blue_skies.png"/></a>
             <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Blonde Hair and Blue Skies</h6>
             <div className='description'>
-              <a href="https://fanlink.to/blonde-hair-and-blue-skies" ><p className='highlight px-2'>Stream</p></a>
+              <a href="https://fanlink.tv/blonde-hair-and-blue-skies" ><p className='highlight px-2'>Stream</p></a>
               <img className="star" src='/star.png'/>
               <a href="/songs/BHBS.mp3" download><p className='highlight px-2'>MP3</p></a>
               <img className="star" src='/star.png'/>
@@ -284,10 +284,10 @@ function HeroSection() {
 
 
           <div className='art'>
-            <a href="https://fanlink.to/birthofagoddess" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/boag.png"/></a>
+            <a href="https://fanlink.tv/birthofagoddess" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/boag.png"/></a>
             <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Birth of a Goddess Remix</h6>
             <div className='description'>
-              <a href="https://fanlink.to/birthofagoddess" ><p className='highlight px-2'>Stream</p></a>
+              <a href="https://fanlink.tv/birthofagoddess" ><p className='highlight px-2'>Stream</p></a>
               <img className="star" src='/star.png'/>
               <a href="/songs/BOAG.mp3" download><p className='highlight px-2'>MP3</p></a>
               <img className="star" src='/star.png'/>
@@ -297,10 +297,10 @@ function HeroSection() {
 
 
           <div className='art'>
-            <a href="https://fanlink.to/blonde-hair-and-blue-skies" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/blonde_hair_blue_skies_2.png"/></a>
+            <a href="https://fanlink.tv/blonde-hair-and-blue-skies" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/blonde_hair_blue_skies_2.png"/></a>
             <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Touch the Sky</h6>
             <div className='description'>
-              <a href="https://fanlink.to/blonde-hair-and-blue-skies" ><p className='highlight px-2'>Stream</p></a>
+              <a href="https://fanlink.tv/blonde-hair-and-blue-skies" ><p className='highlight px-2'>Stream</p></a>
               <img className="star" src='/star.png'/>
               <a href="/songs/touch_the_sky.mp3" download><p className='highlight px-2'>MP3</p></a>
               <img className="star" src='/star.png'/>
@@ -311,10 +311,10 @@ function HeroSection() {
 
 
           <div className='art'>
-            <a href="https://fanlink.to/morning-coffee-1" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/morning coffee.png"/></a>
+            <a href="https://fanlink.tv/morning-coffee-1" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/morning coffee.png"/></a>
             <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Morning Coffee</h6>
             <div className='description'>
-              <a href="https://fanlink.to/morning-coffee-1" ><p className='highlight px-2'>Stream</p></a>
+              <a href="https://fanlink.tv/morning-coffee-1" ><p className='highlight px-2'>Stream</p></a>
               <img className="star" src='/star.png'/>
               <a href="/songs/morning_coffee.mp3" download><p className='highlight px-2'>MP3</p></a>
               <img className="star" src='/star.png'/>
@@ -324,10 +324,10 @@ function HeroSection() {
 
           
           <div className='art'>
-            <a href="https://fanlink.to/blonde-hair-and-blue-skies" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/blonde_hair_blue_skies_2.png"/></a>
+            <a href="https://fanlink.tv/blonde-hair-and-blue-skies" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/blonde_hair_blue_skies_2.png"/></a>
             <h6 className='art-text sm:text-[26px] text-[16px]  pt-4  xs:text-[20px]'>Heartbreak & Breakthroughs</h6>
             <div className='description'>
-              <a href="https://fanlink.to/blonde-hair-and-blue-skies" ><p className='highlight px-2'>Stream</p></a>
+              <a href="https://fanlink.tv/blonde-hair-and-blue-skies" ><p className='highlight px-2'>Stream</p></a>
               <img className="star" src='/star.png'/>
               <a href="/songs/heartbreak_breakthroughs.mp3" download><p className='highlight px-2'>MP3</p></a>
               <img className="star" src='/star.png'/>
@@ -338,10 +338,10 @@ function HeroSection() {
 
 
           <div className='art'>
-            <a href="https://fanlink.to/puppet-1" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/puppet.png"/></a>
+            <a href="https://fanlink.tv/puppet-1" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/puppet.png"/></a>
             <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Puppet</h6>
             <div className='description'>
-              <a href="https://fanlink.to/puppet-1" ><p className='highlight px-2'>Stream</p></a>
+              <a href="https://fanlink.tv/puppet-1" ><p className='highlight px-2'>Stream</p></a>
               <img className="star" src='/star.png'/>
               <a href="/songs/puppet.mp3" download><p className='highlight px-2'>MP3</p></a>
               <img className="star" src='/star.png'/>
@@ -352,10 +352,10 @@ function HeroSection() {
 
 
           <div className='art'>
-            <a href="https://fanlink.to/escape_velocity" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/escape_velocity.png"/></a>
+            <a href="https://fanlink.tv/escape_velocity" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/escape_velocity.png"/></a>
             <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Escape Velocity</h6>
             <div className='description'>
-              <a href="https://fanlink.to/escape_velocity" ><p className='highlight px-2'>Stream</p></a>
+              <a href="https://fanlink.tv/escape_velocity" ><p className='highlight px-2'>Stream</p></a>
               <img className="star" src='/star.png'/>
               <a href="/songs/escape_velocity.mp3" download><p className='highlight px-2'>MP3</p></a>
               <img className="star" src='/star.png'/>
@@ -377,10 +377,10 @@ function HeroSection() {
           </div>
           
           <div className='art'>
-            <a href="https://fanlink.to/dragonis-gv-aurora" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/aurora.png"/></a>
+            <a href="https://fanlink.tv/dragonis-gv-aurora" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/aurora.png"/></a>
             <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Aurora</h6>
             <div className='description'>
-              <a href="https://fanlink.to/dragonis-gv-aurora" ><p className='highlight px-2'>Stream</p></a>
+              <a href="https://fanlink.tv/dragonis-gv-aurora" ><p className='highlight px-2'>Stream</p></a>
               <img className="star" src='/star.png'/>
               <a href="/songs/aurora.mp3" download><p className='highlight px-2'>MP3</p></a>
               <img className="star" src='/star.png'/>
@@ -423,10 +423,10 @@ function HeroSection() {
 
 
           <div className='art'>
-            <a href="https://fanlink.to/die4u-james-lee-dragonis" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/die4u.png"/></a>
+            <a href="https://fanlink.tv/die4u-james-lee-dragonis" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/die4u.png"/></a>
             <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Die4U</h6>
             <div className='description'>
-              <a href="https://fanlink.to/die4u-james-lee-dragonis" ><p className='highlight px-2'>Stream</p></a>
+              <a href="https://fanlink.tv/die4u-james-lee-dragonis" ><p className='highlight px-2'>Stream</p></a>
               <img className="star" src='/star.png'/>
               <a href="/songs/die4u.mp3" download><p className='highlight px-2'>MP3</p></a>
               <img className="star" src='/star.png'/>
@@ -435,10 +435,10 @@ function HeroSection() {
           </div>
 
           <div className='art'>
-            <a href="https://fanlink.to/new-horizons" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/new_horizons.png"/></a>
+            <a href="https://fanlink.tv/new-horizons" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/new_horizons.png"/></a>
             <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>New Horizons</h6>
             <div className='description'>
-              <a href="https://fanlink.to/new-horizons" ><p className='highlight px-2'>Stream</p></a>
+              <a href="https://fanlink.tv/new-horizons" ><p className='highlight px-2'>Stream</p></a>
               <img className="star" src='/star.png'/>
               <a href="/songs/new_horizons.mp3" download><p className='highlight px-2'>MP3</p></a>
               <img className="star" src='/star.png'/>
@@ -448,10 +448,10 @@ function HeroSection() {
 
 
           <div className='art'>
-            <a href="https://fanlink.to/my-heart-ep" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/my_heart.png"/></a>
+            <a href="https://fanlink.tv/my-heart-ep" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/my_heart.png"/></a>
             <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>My Heart EP</h6>
             <div className='description'>
-              <a href="https://fanlink.to/my-heart-ep" ><p className='highlight px-2'>Stream</p></a>
+              <a href="https://fanlink.tv/my-heart-ep" ><p className='highlight px-2'>Stream</p></a>
               <img className="star" src='/star.png'/>
               <a href="/songs/my_heart.zip" download><p className='highlight px-2'>MP3</p></a>
               <img className="star" src='/star.png'/>
@@ -460,10 +460,10 @@ function HeroSection() {
           </div>
 
           <div className='art'>
-            <a href="https://fanlink.to/chizuru" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/chizuru.png"/></a>
+            <a href="https://fanlink.tv/chizuru" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/chizuru.png"/></a>
             <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Chizuru</h6>
             <div className='description'>
-              <a href="https://fanlink.to/chizuru" ><p className='highlight px-2'>Stream</p></a>
+              <a href="https://fanlink.tv/chizuru" ><p className='highlight px-2'>Stream</p></a>
               <img className="star" src='/star.png'/>
               <a href="/songs/chizuru.mp3" download><p className='highlight px-2'>MP3</p></a>
               <img className="star" src='/star.png'/>
@@ -501,10 +501,10 @@ function HeroSection() {
           </div>
 
           <div className='art'>
-            <a href="https://fanlink.to/dragonisxkalume" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/lose_my_mind.png"/></a>
+            <a href="https://fanlink.tv/dragonisxkalume" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/lose_my_mind.png"/></a>
             <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Lose My Mind</h6>
             <div className='description'>
-              <a href="https://fanlink.to/dragonisxkalume" ><p className='highlight px-2'>Stream</p></a>
+              <a href="https://fanlink.tv/dragonisxkalume" ><p className='highlight px-2'>Stream</p></a>
               <img className="star" src='/star.png'/>
               <a href="/songs/lose_my_mind.mp3" download><p className='highlight px-2'>MP3</p></a>
               <img className="star" src='/star.png'/>
@@ -525,10 +525,10 @@ function HeroSection() {
           </div>
 
           <div className='art'>
-            <a href="https://fanlink.to/fuckboi-dragonis-drewharvey" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/fuckboi.png"/></a>
+            <a href="https://fanlink.tv/fuckboi-dragonis-drewharvey" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/fuckboi.png"/></a>
             <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Fuckboi</h6>
             <div className='description'>
-              <a href="https://fanlink.to/fuckboi-dragonis-drewharvey" ><p className='highlight px-2'>Stream</p></a>
+              <a href="https://fanlink.tv/fuckboi-dragonis-drewharvey" ><p className='highlight px-2'>Stream</p></a>
               <img className="star" src='/star.png'/>
               <a href="/songs/fuckboi.mp3" download><p className='highlight px-2'>MP3</p></a>
               <img className="star" src='/star.png'/>
@@ -537,10 +537,10 @@ function HeroSection() {
           </div>
 
           <div className='art'>
-            <a href="https://fanlink.to/r-102" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/ashamed.png"/></a>
+            <a href="https://fanlink.tv/r-102" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/ashamed.png"/></a>
             <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>Ashamed</h6>
             <div className='description'>
-              <a href="https://fanlink.to/r-102" ><p className='highlight px-2'>Stream</p></a>
+              <a href="https://fanlink.tv/r-102" ><p className='highlight px-2'>Stream</p></a>
               <img className="star" src='/star.png'/>
               <a href="/songs/ashamed.mp3" download><p className='highlight px-2'>MP3</p></a>
               <img className="star" src='/star.png'/>
@@ -561,10 +561,10 @@ function HeroSection() {
           </div>
 
           <div className='art'>
-            <a href="https://fanlink.to/not-missing-u" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/not_missing_u.png"/></a>
+            <a href="https://fanlink.tv/not-missing-u" className='cover-art' target='blank'><img className="rounded-lg" src="/releases/not_missing_u.png"/></a>
             <h6 className='art-text sm:text-[30px] text-[16px]  pt-4  xs:text-[20px]'>not missing u</h6>
             <div className='description'>
-              <a href="https://fanlink.to/not-missing-u" ><p className='highlight px-2'>Stream</p></a>
+              <a href="https://fanlink.tv/not-missing-u" ><p className='highlight px-2'>Stream</p></a>
               <img className="star" src='/star.png'/>
               <a href="/songs/notmissingu.mp3" download><p className='highlight px-2'>MP3</p></a>
               <img className="star" src='/star.png'/>
