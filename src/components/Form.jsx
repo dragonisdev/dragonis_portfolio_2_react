@@ -56,7 +56,7 @@ function Form() {
         />
 
         <label className="form-label" htmlFor="message">
-          What can I help you with?
+          Message
         </label>
         <textarea className="form-textarea" name="message" id="message" required />
 

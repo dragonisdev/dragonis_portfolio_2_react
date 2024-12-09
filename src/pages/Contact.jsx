@@ -44,17 +44,18 @@ function About() {
           </h1>
           <a href="https://www.youtube.com/watch?v=Zucr7blqHiE" target="blank">
             <h3 className="font-poppins font-bold ss:text-[24px] text-[20px] text-white ss:leading-[30.8px] leading-[20.8px]  text-dragonis2 max-w-[38ch] pt-4 lg:text-left text-center">
-              "I lost the thought of life and love, to the wonders sky above" - Adrift
+              "I lost the thought of life and love, to the wonders sky above"
             </h3>
           </a>
           <p className="font-medium opacity-90 text-white text-left text-[18px] max-w-[59ch] pt-6">
-            I’m a relentless creative who's devoted to creating art and music. I'm in chase of the unattainable and even if I disappear before getting heard, I'm really happy... <br />
-            <br /> I'm happy because you're reading this! You, who's sitting behind a screen, witnessing my art and effort. Thank you for listening and being a part of my
-            journey, it means a lot to me. Truly! <br />
+          I’m a passionate creator dedicated to making art and music. I'm always pushing to explore new ideas, and even if I never reach everyone, I'm grateful that you're here, experiencing my work. Thank you for listening and being part of this journey — it truly means a lot.
+
+I also offer a range of services: music production, 3D animation, one-on-one lessons, web development, and consulting. I'm always up for a new challenge, so feel free to reach out!<br />
             <br />
+      
             I also offer a variety of services, from music production, 3D animation and one-on-one lessons, to web development and consulting; I'm always down for a new challenge, so do not hesitate to contact me!<br />
             <br />
-            You can message me below...
+            You can follow me or message me below!
             
           </p>
           <a href="https://www.instagram.com/dragonis_music/"><button className='button-main3 w-full sm:w-1/3  font-poppins font-semibold btn px-5 py-2 my-5 rounded-lg' >Follow Me</button></a>
