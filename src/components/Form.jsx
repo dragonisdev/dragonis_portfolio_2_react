@@ -52,7 +52,7 @@ function Form() {
           name="user_email"
           id="user_email"
           required
-          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+          
         />
 
         <label className="form-label" htmlFor="message">

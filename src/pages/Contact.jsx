@@ -48,9 +48,10 @@ function About() {
             </h3>
           </a>
           <p className="font-medium opacity-90 text-white text-left text-[18px] max-w-[59ch] pt-6">
-          I’m a passionate creator dedicated to making art and music. I'm always pushing to explore new ideas, and even if I never reach everyone, I'm grateful that you're here, experiencing my work. Thank you for listening and being part of this journey — it truly means a lot.
-
-I also offer a range of services: music production, 3D animation, one-on-one lessons, web development, and consulting. I'm always up for a new challenge, so feel free to reach out!<br />
+          I’m a passionate creator dedicated to making art and music. I'm always pushing to explore new ideas, 
+          and even if I never reach everyone, I'm grateful that you're here listening to my work. 
+          Thank you for listening and being part of this journey — it truly means a lot.
+          <br />
             <br />
       
             I also offer a variety of services, from music production, 3D animation and one-on-one lessons, to web development and consulting; I'm always down for a new challenge, so do not hesitate to contact me!<br />
