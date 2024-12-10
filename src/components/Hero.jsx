@@ -35,9 +35,9 @@ function HeroSection() {
     <div>
       <div className='flex md:flex-row flex-col max-w-[1400px] min-h-[520px] justify-between items-center md:pt-6 pt-0 '>
           <animated.div style = {props}><div className='mx-6 mb-7 text-center  sm:text-left'>  
-              <h1 className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full  xs:text-[52px] text-center'>
-                  Hey guys, I’m  
-              </h1>
+            <h1 className="text-left font-poppins font-bold ss:text-[80px] text-[29px] ss:leading-[100.8px] leading-[75px] w-full xs:text-[52px] text-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
+              Hey guys, I’m  
+            </h1>
               <Link to='/'><img src={logo} className="w-full max-w-[550px] xs:mb-0 mb-4"/></Link>
               <p className='font-semibold  text-white text-[18px] max-w-[47ch]'>
               Welcome to my heavenly domain! Here, I produce EDM music, bring 3D art to life, and code in my dreams into reality - all from my bedroom. Join me on this journey in chase for bluer skies, and endless horizons together!
