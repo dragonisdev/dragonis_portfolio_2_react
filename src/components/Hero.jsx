@@ -40,7 +40,8 @@ function HeroSection() {
             </h1>
               <Link to='/'><img src={logo} className="w-full max-w-[550px] xs:mb-0 mb-4"/></Link>
               <p className='font-semibold  text-white text-[18px] max-w-[47ch]'>
-              Welcome to my heavenly domain! Here, I produce EDM music, bring 3D art to life, and code in my dreams into reality - all from my bedroom. Join me on this journey in chase for bluer skies, and endless horizons together!
+              Welcome to my heavenly domain! Here, I produce EDM music, bring 3D art to life, and code in my dreams into reality - all from my bedroom. 
+              Listen to my life's journey in chase for bluer skies, and untold adventures!
               </p>
               <Link><button className='button-main  w-full sm:w-fit font-poppins font-semibold btn px-5 py-2 my-5 sm:w-1/3 rounded-lg' onClick={scrollToReleases}>My Releases</button></Link>
               <Link to='/Contact'><button className='button-secondary ml-0 w-full sm:w-fit font-poppins font-semibold btn px-5 py-2 sm:ml-12 sm:w-1/3 rounded-lg'>About Me</button></Link>

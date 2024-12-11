@@ -17,6 +17,7 @@
     "@splinetool/runtime": "^0.9.168",
     "@vercel/analytics": "^1.0.1",
     "aos": "^2.3.4",
+    "gsap": "^3.12.5",
     "hamburger-react": "^2.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

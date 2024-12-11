@@ -16,6 +16,8 @@ import aa from "@/assets/aa.png";
 import aaGif from '@/assets/cc.gif';
 import bbGif from '@/assets/dd.gif';
 
+import { gsap } from "gsap";
+
 const scrollToReleases = () => {
   const releasesElement = document.getElementById('gallery');
   releasesElement.scrollIntoView({ behavior: 'smooth' });
