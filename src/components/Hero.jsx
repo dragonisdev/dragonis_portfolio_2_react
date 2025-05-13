@@ -81,7 +81,7 @@ function HeroSection() {
             ))}
           </div>
       </div></animated.div>
-      
+     
     </div>
   )
 }
