@@ -1,5 +1,65 @@
 
 export const songs = [
+    {
+    title: "Ballista",
+    cover: "/releases/ballista.jpg",
+    streamUrl: "https://fanlink.tv/ballistaa",
+    mp3: "/songs/ballista.mp3",
+    artwork: "/ballista.png"
+    },
+
+    {
+    title: "Roulette",
+    cover: "/releases/roulette.jpg",
+    streamUrl: "https://fanlink.tv/roulette-sydenify",
+    mp3: "/songs/roulette.mp3",
+    artwork: "/artworks/roulette.jpg"
+    },
+
+    {
+    title: "Afflictions",
+    cover: "/releases/afflictions.jpg",
+    streamUrl: "https://fanlink.tv/afflictions-w-treb",
+    mp3: "/songs/afflictions.mp3",
+    artwork: "/artworks/afflictions.png"
+    },
+
+    {
+    title: "Phase",
+    cover: "/releases/phase.jpg",
+    streamUrl: "https://fanlink.tv/phases-w-treb",
+    mp3: "/songs/phase.mp3",
+    artwork: "/artworks/phase.png"
+    },
+
+    {
+    title: "Northern Lights",
+    cover: "/releases/northern_lights.jpg",
+    streamUrl: "https://fanlink.tv/dragonis-northern-lights",
+    mp3: "/songs/northern_lights.mp3",
+    artwork: "/artworks/northern_lights.png"
+    },
+    {
+    title: "Abyssal",
+    cover: "/releases/abyssal.jpg",
+    streamUrl: "https://fanlink.tv/abyssal-treb",
+    mp3: "/songs/abyssal.mp3",
+    artwork: "/artworks/abyssal.png"
+    },
+    {
+    title: "Terralith",
+    cover: "/releases/terralith.jpg",
+    streamUrl: "https://fanlink.tv/terralith",
+    mp3: "/songs/terralith.mp3",
+    artwork: "/artworks/terralith.png"
+    },
+    {
+    title: "Elysium",
+    cover: "/releases/elysium.jpg",
+    streamUrl: "https://fanlink.tv/elysium1",
+    mp3: "/songs/elysium.mp3",
+    artwork: "/artworks/elysium.png"
+    },
   {
     title: "nightrider",
     cover: "/releases/nightrider.png",
