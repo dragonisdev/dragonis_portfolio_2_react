@@ -40,7 +40,7 @@ function About() {
 
         <div className="lg:mr-12 mx-6  mb-7 text-center lg:text-left">
           <h1 className="font-poppins font-bold ss:text-[70px] lg:text-[90px]  xs:text-[64px] text-[32px] text-white ss:leading-[100.8px] leading-[75px] w-full">
-            About Me
+            My Story
           </h1>
           <a href="https://www.youtube.com/watch?v=Zucr7blqHiE" target="blank">
             <h3 className="font-poppins font-bold ss:text-[24px] text-[20px] text-white ss:leading-[30.8px] leading-[20.8px]  text-dragonis2 max-w-[38ch] pt-4 lg:text-left text-center">

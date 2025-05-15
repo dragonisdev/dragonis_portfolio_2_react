@@ -35,9 +35,11 @@ function Webdev() {
 
   return (
     <div className='max-w-[1400px] min-h-[520px]'>
-      <animated.div style={props2}><div className=''>
-        <Technologies/>
-      </div></animated.div>
+      <animated.div style={props2}>
+        <div className=''>
+          <Technologies/>
+        </div>
+      </animated.div>
       <animated.div style={props}><div className="flex  flex-col justify-center lg:justify-between items-center  rounded-3xl " >
           <h1 className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white  xs:leading-[80px] leading-[40px] w-full  xs:text-[52px] text-center'>
                     Hey guys, I’m  
