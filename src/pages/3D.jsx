@@ -33,9 +33,9 @@ function Threed() {
     reset: true,
     reverse: flip,
     delay: 500,
-    
 
-  
+
+
   })
 
   const [isImage1Hovered, setImage1Hovered] = useState(false);
@@ -45,9 +45,9 @@ function Threed() {
   const [image1GifLoaded, setImage1GifLoaded] = useState(false);
   const [image2GifLoaded, setImage2GifLoaded] = useState(false);
   const [isGalleryLoaded, setGalleryLoaded] = useState(false); // Add a new state for gallery loading
-  
-  
-  
+
+
+
   useEffect(() => {
     const image1 = new Image();
     const image2 = new Image();
@@ -99,19 +99,19 @@ function Threed() {
     setImage2Hovered(false);
   };
 
-  
+
 
   return (
-    
+
       <div>
         <Logos3D />
       <div className='pt-4'></div>
       <div className=' bg-cover bg-center flex md:flex-row flex-col max-w-[1400px] min-h-[520px] justify-between items-center ' style={{ backgroundImage: "url('./8.png')" }}>
-      
+
           <div className='md:w-[35%] w-[45%] mx-6 my-6 '>
           <a href='https://www.instagram.com/dragonis_art/' target='blank'><img className='nft-man rounded-3xl' src={nftman} /></a>
           </div>
-          
+
           <div className='mx-6 md:my-7 mb-7 text-center sm:text-left'>
             <h1 className='md:text-left font-poppins font-bold ss:text-[64px] text-[29px] text-white xs:leading-[80px] leading-[20px] w-full xs:text-[52px] text-center'>
               Hey guys, I'm
@@ -136,7 +136,7 @@ function Threed() {
                 onMouseLeave={handleImage1Leave}
               >
                 <img
-                  
+
                   className='banner3d'
                   src={isImage1Hovered ? bbGif : bb}
                   alt='Image 1'
@@ -216,7 +216,7 @@ function Threed() {
           )}
         </div>
       </div>
-    
+
   );
 }
 

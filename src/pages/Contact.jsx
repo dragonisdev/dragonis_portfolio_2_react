@@ -13,7 +13,7 @@ const scrollToReleases = () => {
   const releasesElements = document.getElementById('contact')
   releasesElements.scrollIntoView({behavior: "smooth"})
 
-} 
+}
 
 
 
@@ -27,9 +27,9 @@ function About() {
     reset: true,
     reverse: flip,
     delay: 500,
-    
 
-  
+
+
   })
   const [count, setCount] = useState(0);
 
@@ -48,16 +48,16 @@ function About() {
             </h3>
           </a>
           <p className="font-medium opacity-90 text-white text-left text-[18px] max-w-[59ch] pt-6">
-          I’m a passionate creator dedicated to making art and music. I'm always pushing to explore new ideas, 
-          and even if I never reach everyone, I'm grateful that you're here listening to my work. 
+          I’m a passionate creator dedicated to making art and music. I'm always pushing to explore new ideas,
+          and even if I never reach everyone, I'm grateful that you're here listening to my work.
           Thank you for listening and being part of this journey — it truly means a lot.
           <br />
             <br />
-      
+
             I also offer a variety of services, from music production, 3D animation and one-on-one lessons, to web development and consulting; I'm always down for a new challenge, so do not hesitate to contact me!<br />
             <br />
             You can follow me or message me below!
-            
+
           </p>
           <a href="https://www.instagram.com/dragonis_music/"><button className='button-main3 w-full sm:w-1/3  font-poppins font-semibold btn px-5 py-2 my-5 rounded-lg' >Follow Me</button></a>
             <Link to='#contact'><button className='button-secondary ml-0 w-full sm:w-fit font-poppins font-semibold btn px-5 py-2 sm:ml-12 sm:w-1/3   rounded-lg' onClick={scrollToReleases}>Contact</button></Link>
@@ -72,7 +72,7 @@ function About() {
           <div >
             <Form/>
           </div>
-          
+
       </div>
     </div></animated.div>
   );

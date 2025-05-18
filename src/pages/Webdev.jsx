@@ -13,11 +13,11 @@ function Webdev() {
     reset: true,
     reverse: flip,
     delay: 500,
-    
 
-  
+
+
   })
-  
+
   const props2 = useSpring({
     to: { opacity: 1,
           translateX: '0%'},
@@ -26,9 +26,9 @@ function Webdev() {
     reset: true,
     reverse: flip,
     delay: 500,
-    
 
-  
+
+
   })
 
 
@@ -42,26 +42,23 @@ function Webdev() {
       </animated.div>
       <animated.div style={props}><div className="flex  flex-col justify-center lg:justify-between items-center  rounded-3xl " >
           <h1 className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white  xs:leading-[80px] leading-[40px] w-full  xs:text-[52px] text-center'>
-                    Hey guys, I’m  
+                    Hey guys, I’m
           </h1>
-          
+
           <h1 className='text-dragonis  font-poppins font-bold ss:text-[50px] text-[29px] text-white xs:leading-[100.8px] leading-[40px] w-full xs:text-[52px] text-center'>
                 a Frontend Developer
           </h1>
       </div>
 
       </animated.div>
-      
-      
-      
-       
-        
+
+
       {/*<h1 id="releases" className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full  xs:text-[52px] text-center text-dragonis  md:pt-12 pt-0'>Web Portfolio</h1>*/}
 
       <div className="flex items-center justify-center pb-28 mb-10 pt-4 ">
         <div className='flex devdiv flex-wrap justify-between justify-center content-center'>
-          
-          
+
+
           <animated.div style={props}>
             <div className='devbox'>
               <h6 className='text-white font-bold sm:text-[30px] text-[16px] py-6 xs:text-[20px]'>Playlist Surfer Frontend</h6>
@@ -101,11 +98,11 @@ function Webdev() {
             </div>
           </animated.div>
 
-          
+
         </div>
-        
+
       </div>
-      
+
     </div>
   )
 }

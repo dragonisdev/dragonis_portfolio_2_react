@@ -24,7 +24,6 @@ function App() {
             <Route path='/3D' element={<Threed/>}></Route>
             <Route path='/Contact' element={<Contact/>}></Route>
             <Route path='/Services' element={<Services/>}></Route>
-        
 
           </Routes>
         <Links/>
