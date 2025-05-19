@@ -51,24 +51,27 @@ const Services = () => {
           </animated.div>
         </div>
 
-        <animated.div style={props2}>
-        <div className='pt-6' onClick={() => window.open('https://skinwaste.com/en/elite', '_blank')}>
-          <div  className='image-container'>
-              <div className='relative'>
-                <img className='banner3d' src={aa}/>
+        
+        
+          
+          <div  className='image-container pt-6'>
+            <animated.div style={props2}>
+              <div onClick={() => window.open('https://example.com', '_blank')} className='relative'>
+                <img className='banner3d' src={aa} />
 
                 <div  className='overlay'>
-                  <p className='text-center text-white font-poppins font-bold ss:text-[40px] text-[20px]'>Samples & FLPs & Lessons</p>
+                  <p className='text-center text-white font-poppins font-bold ss:text-[40px] text-[20px]'>Samples, FLPs and Lessons</p>
                 </div>
               </div>
-
+            </animated.div>
               <div className='relative mt-12'>
                 <img className='banner3d' src={aa}/>
 
                 <div  className='overlay'>
-                  <p className='text-center text-white font-poppins font-bold ss:text-[40px] text-[20px]'>Get Your 3D Artworks</p>
+                  <p className='text-center text-white font-poppins font-bold ss:text-[40px] text-[20px]'>3D Artworks</p>
                 </div>
               </div>
+
 
               <div className='relative mt-12 mb-20'>
                 <img className='banner3d' src={aa}/>
@@ -79,8 +82,8 @@ const Services = () => {
               </div>
 
           </div>
-        </div>
-        </animated.div>
+        
+        
 
 
     </div>

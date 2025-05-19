@@ -6,7 +6,7 @@ import Contact from "@/pages/Contact";
 import { Link } from 'react-router-dom';
 import Loading from '@/components/Loading';
 import line from "@/assets/line.png";
-
+import { promoItems } from '@/constants/gifs.js';
 import nftman from "@/assets/3.png";
 
 
@@ -14,16 +14,13 @@ import Technologies from '@/components/Technologies'
 import {useSpring, animated} from "react-spring"
 
 import Spinner from '@/components/Spinner';
+import GifHover from '@/components/GifHover';
 
 {/* 
 import Gallery from '@/components/Gallery';
 import Hero3D from '@/components/Hero3D';
 import Logos3D from "@/components/logos3d";
 */}
-import bb from "@/assets/bb.png";
-import aa from "@/assets/aa.png";
-import aaGif from '@/assets/cc.gif';
-import bbGif from '@/assets/dd.gif';
 
 const Hero3D = lazy(() => import('../components/Hero3D'));
 const Logos3D = lazy(() => import('../components/Logos3D'));
@@ -57,72 +54,7 @@ function Threed() {
     });
    
   
-
-  const [isImage1Hovered, setImage1Hovered] = useState(false);
-  const [isImage2Hovered, setImage2Hovered] = useState(false);
-  const [image1Size, setImage1Size] = useState({ width: 0, height: 0 });
-  const [image2Size, setImage2Size] = useState({ width: 0, height: 0 });
-  const [image1GifLoaded, setImage1GifLoaded] = useState(false);
-  const [image2GifLoaded, setImage2GifLoaded] = useState(false);
-  const [isGalleryLoaded, setGalleryLoaded] = useState(false); // Add a new state for gallery loading
-
-  
-  // gif hover over effect
-  useEffect(() => {
-    const image1 = new Image();
-    const image2 = new Image();
-
-    image1.src = bb;
-    image2.src = aa;
-
-    image1.onload = () => {
-      setImage1Size({ width: image1.width, height: image1.height });
-    };
-
-    image2.onload = () => {
-      setImage2Size({ width: image2.width, height: image2.height });
-    };
-
-    const gif1 = new Image();
-    const gif2 = new Image();
-
-    gif1.src = bbGif;
-    gif2.src = aaGif;
-
-    gif1.onload = () => {
-      setImage1GifLoaded(true);
-    };
-
-    gif2.onload = () => {
-      setImage2GifLoaded(true);
-    };
-
-    // Set the gallery as loaded once the images have finished loading
-    Promise.all([image1.onload, image2.onload, gif1.onload, gif2.onload]).then(() => {
-      setGalleryLoaded(true);
-    });
-  }, []);
-
-  const handleImage1Hover = () => {
-    setImage1Hovered(true);
-  };
-
-  const handleImage1Leave = () => {
-    setImage1Hovered(false);
-  };
-
-  const handleImage2Hover = () => {
-    setImage2Hovered(true);
-  };
-
-  const handleImage2Leave = () => {
-    setImage2Hovered(false);
-  };
-
-
-
   return (
-
     <Suspense fallback={<Spinner />}>
       <div>
         <animated.div style={props2}>
@@ -132,7 +64,20 @@ function Threed() {
         <animated.div style={props}>
           <Hero3D scrollToReleases={scrollToReleases}/>
         </animated.div>
-      
+
+        {promoItems.map((item, index) => (
+          <animated.div style={index % 2 === 0 ? props2 : props} key={index}>
+            <GifHover
+              staticImg={item.static}
+              gifImg={item.gif}
+              link={item.url}
+              alt={item.alt}
+              caption={item.caption}
+            />
+          </animated.div>
+        ))}
+        
+        {/*
         <animated.div style={props2}>
         <div className='pt-12' onClick={() => window.open('https://skinwaste.com/en/elite', '_blank')}>
           <div  className='image-container'>
@@ -206,7 +151,7 @@ function Threed() {
             )}
           </div>
         </div>
-        </animated.div>
+        </animated.div> */}
 
         <div className="relative w-full h-full ss:pt-28 pt-12 banner pb-2">
           <h1 id='gallery' className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full xs:text-[52px] text-center text-dragonis'>

@@ -10,9 +10,16 @@ import Loading from '@/components/Loading';
 import line from "@/assets/line.png";
 import {useSpring, animated} from "react-spring";
 import nftman from "@/assets/3.png";
-
+import { useNavigate } from "react-router-dom";
 
 const Hero3D = ({scrollToReleases}) => {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/Contact', { state: { scrollTo: 'contact' } });
+  };
+
   return (
     <div
       className='pt-4 bg-cover bg-center flex md:flex-row flex-col max-w-[1400px] min-h-[520px] justify-between items-center'
@@ -39,11 +46,11 @@ const Hero3D = ({scrollToReleases}) => {
             My Gallery
           </button>
         
-        <Link to='/Contact'>
-          <button className='button-secondary ml-0 w-full sm:w-fit font-poppins font-semibold btn px-5 py-2 sm:ml-12 sm:w-1/3 rounded-lg'>
+        
+          <button onClick={handleClick} className='button-secondary ml-0 w-full sm:w-fit font-poppins font-semibold btn px-5 py-2 sm:ml-12 sm:w-1/3 rounded-lg'>
             Hire Me
           </button>
-        </Link>
+        
       </div>
     </div>
   );

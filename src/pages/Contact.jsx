@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import HeroSection from "@/components/Hero";
 import '@/App.css';
 import Navbar from "@/components/Navbar";
 import Links from "@/components/Links";
 import Frame from "@/assets/frame1.png";
 import Share from "@/assets/share2.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Form from "@/components/Form";
 import {useSpring, animated} from "react-spring";
 
@@ -13,6 +13,7 @@ const scrollToReleases = () => {
   const releasesElements = document.getElementById('contact');
   releasesElements.scrollIntoView({behavior: "smooth"});
 };
+
 
 
 
@@ -27,8 +28,21 @@ function About() {
     reverse: flip,
     delay: 500,
   });
+
+  const location = useLocation();
+
   
-  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+  if (location.state?.scrollTo === 'contact') {
+    const el = document.getElementById('contact');
+    if (el) {
+      setTimeout(() => {
+        el.scrollIntoView({ behavior: "smooth" });
+      }, 100); // small delay to ensure element is rendered
+    }
+  }
+}, [location]);
 
   return (
     <animated.div style = {props}><div className="md:pt-6 pt-0 ">
