@@ -12,8 +12,8 @@ import artwork from "@/assets/artwork.jpg";
 
 const Services = () => {
   const navigate = useNavigate();
-  
-  
+
+
 
     const props = useSpring({
       to: { opacity: 1,
@@ -55,8 +55,8 @@ const Services = () => {
           </animated.div>
         </div>
 
-        
-        
+
+
         {/*container*/}
           <div  className='image-container pt-6'>
              <animated.div style={props2}>
@@ -64,15 +64,14 @@ const Services = () => {
                 imgSrc={patreon}
                 caption='Samples, FLPs and Private Lessons'
                 link='https://patreon.com/dragonis_music'
-                
+
               />
             </animated.div>
 
             <animated.div  className="mt-12" style={props}>
               <ServiceCard
                 imgSrc={artwork}
-                caption='Custom 3D Artworks'
-                
+                caption='Custom-Made 3D Visuals'
                 onClick={() => navigate('/Contact', { state: { scrollTo: 'contact' } })}
               />
             </animated.div>
@@ -80,15 +79,14 @@ const Services = () => {
             <animated.div className="mt-12 mb-20" style={props2}>
               <ServiceCard
                 imgSrc={websites}
-                caption='Custom Websites'
-                
+                caption='Fully Responsive Web Design'
                 onClick={() => navigate('/Contact', { state: { scrollTo: 'contact' } })}
               />
             </animated.div>
-            
+
           </div>
-        
-        
+
+
 
 
     </div>
@@ -105,7 +103,7 @@ export default Services;
                 className='relative'
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}
-                
+
               >
                 <img
                   className='banner3d'
@@ -114,18 +112,18 @@ export default Services;
                   style={{
                     filter: hovered ? 'brightness(110%)' : 'brightness(75%)',
                     transition: 'filter 0.3s ease',
-                    
+
                   }}
                 />
 
-               
+
                 <div className='overlay'>
                   <p className='text-center text-white font-poppins font-bold ss:text-[40px] text-[20px]'>
                     Samples/FLPs/1 on 1 Lessons
                   </p>
                 </div>
 
-                
+
                 {hovered && (
                   <div
                     className='absolute bottom-6 left-8 text-white opacity-90'
@@ -135,8 +133,8 @@ export default Services;
                   </div>
                 )}
               </div>
-  
-  
+
+
   <animated.div style={props}>
               <div className='relative mt-12'>
                 <img className='banner3d' src={aa}/>
@@ -158,4 +156,3 @@ export default Services;
             </animated.div>*/ }
 
 
-            
