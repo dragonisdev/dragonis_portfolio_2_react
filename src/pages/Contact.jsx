@@ -29,20 +29,7 @@ function About() {
     delay: 500,
   });
 
-  const location = useLocation();
-
   
-
-  useEffect(() => {
-  if (location.state?.scrollTo === 'contact') {
-    const el = document.getElementById('contact');
-    if (el) {
-      setTimeout(() => {
-        el.scrollIntoView({ behavior: "smooth" });
-      }, 100); // small delay to ensure element is rendered
-    }
-  }
-}, [location]);
 
   return (
     <animated.div style = {props}><div className="md:pt-6 pt-0 ">
