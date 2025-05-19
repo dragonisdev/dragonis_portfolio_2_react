@@ -1,4 +1,4 @@
-// src/components/PromoCard.jsx
+
 
 
 import React, { useState, useEffect } from 'react';

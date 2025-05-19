@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Logos3D from "@/components/logos3d";
 import Spinner from '@/components/Spinner';
 import logo from "@/assets/Dragonis_text.png"
-import Logo from "@/components/Logo";
+import Logo from "@/components/SplineLogo";
 import Contact from "@/pages/Contact";
 
 import Loading from '@/components/Loading';

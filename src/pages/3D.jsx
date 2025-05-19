@@ -1,12 +1,12 @@
 
 import React, { Suspense, lazy, useEffect, useState } from 'react';
 import logo from "@/assets/Dragonis_text.png";
-import Logo from "@/components/Logo";
+import Logo from "@/components/SplineLogo";
 import Contact from "@/pages/Contact";
 import { Link } from 'react-router-dom';
 import Loading from '@/components/Loading';
 import line from "@/assets/line.png";
-import { promoItems } from '@/constants/gifs.js';
+import { gifs } from '@/constants/gifs.js';
 import nftman from "@/assets/3.png";
 
 
@@ -65,7 +65,7 @@ function Threed() {
           <Hero3D scrollToReleases={scrollToReleases}/>
         </animated.div>
 
-        {promoItems.map((item, index) => (
+        {gifs.map((item, index) => (
           <animated.div style={index % 2 === 0 ? props2 : props} key={index}>
             <GifHover
               staticImg={item.static}
@@ -162,7 +162,7 @@ function Threed() {
 
         <div>
           
-            <div className='pb-28 mb-10 pt-4 mt-8'>
+            <div className='pb-28 mb-10 pt-10 '>
               <Gallery />
             </div>
           

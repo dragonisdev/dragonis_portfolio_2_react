@@ -30,14 +30,14 @@ function Webdev() {
   return (
     <div className='max-w-[1400px] min-h-[520px]'>
       <animated.div style={props2}>
-        <div className=''>
+        
           <Technologies/>
-        </div>
+        
       </animated.div>
       
         <div className="flex  flex-col justify-center lg:justify-between items-center  rounded-3xl " >
           <animated.div style={props}>
-            <h1 className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white  xs:leading-[80px] leading-[40px] w-full  xs:text-[52px] text-center'>
+            <h1 className='md:text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white  xs:leading-[80px] leading-[40px] w-full  xs:text-[52px] text-center'>
                     Hey guys, I’m
             </h1>
           </animated.div>
@@ -52,7 +52,7 @@ function Webdev() {
 
       {/*<h1 id="releases" className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full  xs:text-[52px] text-center text-dragonis  md:pt-12 pt-0'>Web Portfolio</h1>*/}
 
-      <div className="flex items-center justify-center pb-28 mb-10 pt-4 ">
+      <div className="flex items-center justify-center pb-28 mb-10">
         <div className='flex devdiv flex-wrap justify-between justify-center content-center'>
 
 

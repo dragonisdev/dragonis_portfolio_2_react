@@ -11,7 +11,7 @@ import git from "@/assets/weblogos/git.png"
 
 function Technologies() {
   return (
-    <div className="flex flex-col flex-wrap sm:mb-22 sm:mb-6 mb-6 items-center">
+    <div className="flex flex-col flex-wrap items-center"> {/*sm:mb-22 sm:mb-6 mb-6*/}
         <div className=' flex flex-row  max-w-[100%] md:space-x-14 ss:space-x-10 '>
 
             <a href="https://fi.wikipedia.org/wiki/HTML" target='blank'><img className="w-12 min-w-0 ss:scale-100 scale-75 icons flex justify-start items-center flex-row my-3 mx-0 px-1" src={html}/></a>
@@ -31,4 +31,4 @@ function Technologies() {
   )
 }
 
-export default Technologies
+export default Technologies;

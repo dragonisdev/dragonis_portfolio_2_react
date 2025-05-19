@@ -3,7 +3,7 @@ import bb from '@/assets/bb.png';
 import aaGif from '@/assets/cc.gif';
 import bbGif from '@/assets/dd.gif';
 
-export const promoItems = [
+export const gifs = [
   {
     static: bb,
     gif: bbGif,

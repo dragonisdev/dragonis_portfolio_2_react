@@ -214,7 +214,7 @@ html, body {
     justify-content: space-between;
     width: 100%;
   
-    padding: 3% 10%;
+    padding: 3% 10%; 
     flex-wrap: wrap;
     flex-direction: row;
     
@@ -236,7 +236,7 @@ html, body {
     justify-content: center;
     
     max-width: 400px;
-    margin: 2rem 1rem;
+    /*margin: 2rem 1rem;*/
   }
 
   .cover-art {
@@ -461,7 +461,20 @@ html, body {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  
+}
+
+.overlay2 {
+  position: absolute;
+  border-radius: 3rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  cursor: pointer;
 }
 
 .overlay p {
