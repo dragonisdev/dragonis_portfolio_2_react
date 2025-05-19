@@ -9,7 +9,7 @@ import Contact from "@/pages/Contact";
 import Loading from '@/components/Loading';
 import line from "@/assets/line.png";
 import {useSpring, animated} from "react-spring";
-import nftman from "@/assets/3.png";
+import nftman from "@/assets/3.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Hero3D = ({scrollToReleases}) => {
