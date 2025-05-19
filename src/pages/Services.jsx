@@ -64,6 +64,8 @@ const Services = () => {
                 </div>
               </div>
             </animated.div>
+
+            <animated.div style={props}>
               <div className='relative mt-12'>
                 <img className='banner3d' src={aa}/>
 
@@ -71,8 +73,9 @@ const Services = () => {
                   <p className='text-center text-white font-poppins font-bold ss:text-[40px] text-[20px]'>3D Artworks</p>
                 </div>
               </div>
+            </animated.div>
 
-
+            <animated.div style={props2}>
               <div className='relative mt-12 mb-20'>
                 <img className='banner3d' src={aa}/>
 
@@ -80,7 +83,7 @@ const Services = () => {
                   <p className='text-center text-white font-poppins font-bold ss:text-[40px] text-[20px]'>Custom Websites</p>
                 </div>
               </div>
-
+            </animated.div>
           </div>
         
         

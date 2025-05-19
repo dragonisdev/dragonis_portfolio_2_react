@@ -23,7 +23,7 @@ import Logos3D from "@/components/logos3d";
 */}
 
 const Hero3D = lazy(() => import('../components/Hero3D'));
-const Logos3D = lazy(() => import('../components/Logos3D'));
+const Logos3D = lazy(() => import('../components/logos3d'));
 const Gallery = lazy(() => import('../components/Gallery'));
 
 const scrollToReleases = () => {
