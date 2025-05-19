@@ -14,7 +14,9 @@ function logos3d() {
     <div className="flex flex-col flex-wrap sm:mb-22 sm:mb-6 mb-6 items-center">
         <div className=' flex flex-row  max-w-[100%] md:space-x-14 ss:space-x-10 '>
 
-            <a href="https://quixel.com/megascans/" target='blank'><img className="w-12 min-w-0 ss:scale-100 scale-75 icons flex justify-start items-center flex-row my-3 mx-0 px-1" src={Megascans}/></a>
+            <a href="https://quixel.com/megascans/" target='blank'>
+            <img className="w-12 min-w-0 ss:scale-100 scale-75 icons flex justify-start items-center flex-row my-3 mx-0 px-1" src={Megascans}/></a>
+            
             <a href="https://quixel.com/mixer" target='blank'><img className="w-12 min-w-0 ss:scale-100 scale-75 icons flex justify-start items-center flex-row my-3 mx-0 px-1" src={Quixel}/></a>
             <a href="https://www.blender.org" target='blank'><img className="w-12 min-w-0 ss:scale-100 scale-75 icons flex justify-start items-center flex-row my-3 mx-0 px-1" src={Blender}/></a>
             <a href="https://www.unrealengine.com/en-US" target='blank'><img className="w-12 min-w-0 ss:scale-100 scale-75 icons flex justify-start items-center flex-row my-3 mx-0 px-1" src={Unreal}/></a>
