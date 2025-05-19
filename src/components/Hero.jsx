@@ -18,6 +18,7 @@ const scrollToReleases = () => {
 
 function HeroSection() {
   const [flip, setFlip] = useState(false);
+
   const props = useSpring({
     to: { opacity: 1,
           translateX: '0%'},
@@ -26,10 +27,19 @@ function HeroSection() {
     reset: true,
     reverse: flip,
     delay: 500,
-    
+  });
 
+  const props2 = useSpring({
+        to: { opacity: 1,
+              translateX: '0%'},
+        from: { opacity: 0,
+                translateX: '100%'},
+        config: { tension: 170, friction: 26 },
+        delay: 500,
   
-  })
+  
+  
+    });
 
   return (
     

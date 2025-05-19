@@ -32,7 +32,7 @@ const Services = () => {
 
 
 
-    })
+  })
 
   return (
     <div  className='max-w-[1400px] min-h-[520px]'>
