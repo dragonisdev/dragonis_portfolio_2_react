@@ -8,7 +8,7 @@ import { Spin as Hamburger } from "hamburger-react";
 import {Link, NavLink} from 'react-router-dom'
 
 
-function nav() {
+function Nav() {
   
   const [toggle, setToggle] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -49,17 +49,17 @@ function nav() {
             `}
           >
             <div className="lg:hidden mobilenavlink">
-            <NavLink to='/Webdev' className="link" onClick={handleLinkClick}>Web Developer</NavLink>
+            <NavLink to='/webdev' className="link" onClick={handleLinkClick}>Web Developer</NavLink>
             </div>
             <div className="lg:hidden mobilenavlink">
             <NavLink to='/3D' className="link" onClick={handleLinkClick}>3D Artist</NavLink>
             </div>
             
             <div className="lg:hidden mobilenavlink">
-            <NavLink to='/Services' className="link" onClick={handleLinkClick}>Services</NavLink>
+            <NavLink to='/services' className="link" onClick={handleLinkClick}>Services</NavLink>
             </div>
             <div className="lg:hidden mobilenavlink">
-              <NavLink to='/Contact' className="link" onClick={handleLinkClick}>Contact Me</NavLink>
+              <NavLink to='/contact' className="link" onClick={handleLinkClick}>Contact Me</NavLink>
             </div>
             
             
@@ -74,16 +74,16 @@ function nav() {
 
           <ul className={`text-dimWhite list-none sm:flex hidden justify-end items-center flex-1 font-poppins font-semibold text-[16px]`}>
             <li className={'mr-16'}>
-              <NavLink to='/Webdev' className="link">Web Developer</NavLink>
+              <NavLink to='/webdev' className="link">Web Developer</NavLink>
             </li>
             <li className='mr-16'>
               <NavLink to='/3D' className="link">3D Artist</NavLink>
             </li>
             <li className='mr-16'>
-              <NavLink to='/Services' className="link">Services</NavLink>
+              <NavLink to='/services' className="link">Services</NavLink>
             </li>
             <li>
-              <NavLink to='/Contact' className="link">Contact Me</NavLink>
+              <NavLink to='/contact' className="link">Contact Me</NavLink>
             </li>
           </ul>
 
@@ -103,4 +103,4 @@ function nav() {
   );
 }
 
-export default nav
+export default Nav

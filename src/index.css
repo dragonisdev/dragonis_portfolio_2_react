@@ -408,7 +408,7 @@ html, body {
 @media screen and (max-width:376px) {
     
     .links { 
-        max-width: 300px; 
+        
     }
     .footertext {
         font-size: 12px
@@ -444,12 +444,14 @@ html, body {
 }
 
 .banner3d:hover {
+  
   cursor: pointer;
   opacity: 80%;
 }
 
 .overlay {
   position: absolute;
+  border-radius: 3rem;
   top: 0;
   left: 0;
   right: 0;

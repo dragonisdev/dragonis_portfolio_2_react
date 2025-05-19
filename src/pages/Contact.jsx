@@ -1,19 +1,18 @@
 import { useState } from "react";
 import HeroSection from "@/components/Hero";
-import '@/App.css'
-import Navbar from "@/components/Navbar"
-import Links from "@/components/Links"
-import Frame from "@/assets/frame1.png"
-import Share from "@/assets/share2.png"
+import '@/App.css';
+import Navbar from "@/components/Navbar";
+import Links from "@/components/Links";
+import Frame from "@/assets/frame1.png";
+import Share from "@/assets/share2.png";
 import { Link } from "react-router-dom";
 import Form from "@/components/Form";
-import {useSpring, animated} from "react-spring"
+import {useSpring, animated} from "react-spring";
 
 const scrollToReleases = () => {
-  const releasesElements = document.getElementById('contact')
-  releasesElements.scrollIntoView({behavior: "smooth"})
-
-}
+  const releasesElements = document.getElementById('contact');
+  releasesElements.scrollIntoView({behavior: "smooth"});
+};
 
 
 
@@ -27,10 +26,8 @@ function About() {
     reset: true,
     reverse: flip,
     delay: 500,
-
-
-
-  })
+  });
+  
   const [count, setCount] = useState(0);
 
   return (

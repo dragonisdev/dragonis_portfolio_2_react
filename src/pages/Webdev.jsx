@@ -5,31 +5,25 @@ import {useSpring, animated} from "react-spring"
 
 function Webdev() {
   const [flip, setFlip] = useState(false);
+
   const props = useSpring({
     to: { opacity: 1,
           translateX: '0%'},
     from: { opacity: 0,
             translateX: '-100%'},
-    reset: true,
-    reverse: flip,
+    config: { tension: 170, friction: 26 },
     delay: 500,
 
-
-
-  })
+  });
 
   const props2 = useSpring({
     to: { opacity: 1,
           translateX: '0%'},
     from: { opacity: 0,
             translateX: '100%'},
-    reset: true,
-    reverse: flip,
+    config: { tension: 170, friction: 26 },
     delay: 500,
-
-
-
-  })
+  });
 
 
 
@@ -40,17 +34,20 @@ function Webdev() {
           <Technologies/>
         </div>
       </animated.div>
-      <animated.div style={props}><div className="flex  flex-col justify-center lg:justify-between items-center  rounded-3xl " >
-          <h1 className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white  xs:leading-[80px] leading-[40px] w-full  xs:text-[52px] text-center'>
+      
+        <div className="flex  flex-col justify-center lg:justify-between items-center  rounded-3xl " >
+          <animated.div style={props}>
+            <h1 className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white  xs:leading-[80px] leading-[40px] w-full  xs:text-[52px] text-center'>
                     Hey guys, I’m
-          </h1>
-
-          <h1 className='text-dragonis  font-poppins font-bold ss:text-[50px] text-[29px] text-white xs:leading-[100.8px] leading-[40px] w-full xs:text-[52px] text-center'>
-                a Frontend Developer
-          </h1>
-      </div>
-
-      </animated.div>
+            </h1>
+          </animated.div>
+          <animated.div style={props2}>
+            <h1 className='text-dragonis  font-poppins font-bold ss:text-[50px] text-[29px] text-white xs:leading-[100.8px] leading-[40px] w-full xs:text-[52px] text-center'>
+                    a Frontend Developer
+            </h1>
+          </animated.div>
+        </div>
+        
 
 
       {/*<h1 id="releases" className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full  xs:text-[52px] text-center text-dragonis  md:pt-12 pt-0'>Web Portfolio</h1>*/}
