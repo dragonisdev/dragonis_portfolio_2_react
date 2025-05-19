@@ -1,17 +1,19 @@
 
 import React, { Suspense, lazy, useEffect, useState } from 'react';
-
+import { useNavigate } from 'react-router-dom';
 import Technologies from '@/components/Technologies'
 import {useSpring, animated} from "react-spring"
 import ServiceCard from '@/components/ServiceCard';
 
+import websites from "@/assets/websites.jpg";
 import patreon from "@/assets/patreon.jpg";
-
+import artwork from "@/assets/artwork.jpg";
 
 
 const Services = () => {
-  const [flip, setFlip] = useState(false);
-  const [hovered, setHovered] = useState(false); 
+  const navigate = useNavigate();
+  
+  
 
     const props = useSpring({
       to: { opacity: 1,
@@ -62,22 +64,25 @@ const Services = () => {
                 imgSrc={patreon}
                 caption='Samples, FLPs and Private Lessons'
                 link='https://patreon.com/dragonis_music'
+                
               />
             </animated.div>
 
-            <animated.div  className="mt-12" style={props2}>
+            <animated.div  className="mt-12" style={props}>
               <ServiceCard
-                imgSrc={patreon}
-                caption='Samples, FLPs and 1 on 1 Lessons'
-                link='https://patreon.com/dragonis_music'
+                imgSrc={artwork}
+                caption='Custom 3D Artworks'
+                
+                onClick={() => navigate('/Contact', { state: { scrollTo: 'contact' } })}
               />
             </animated.div>
 
             <animated.div className="mt-12 mb-20" style={props2}>
               <ServiceCard
-                imgSrc={patreon}
-                caption='Samples, FLPs and 1-On-1 Lessons'
-                link='https://patreon.com/dragonis_music'
+                imgSrc={websites}
+                caption='Custom Websites'
+                
+                onClick={() => navigate('/Contact', { state: { scrollTo: 'contact' } })}
               />
             </animated.div>
             
