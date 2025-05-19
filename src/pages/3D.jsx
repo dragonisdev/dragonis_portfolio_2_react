@@ -1,22 +1,29 @@
-import Gallery from '@/components/Gallery'
-import React, { useEffect, useState } from 'react'
-import logo from "@/assets/Dragonis_text.png"
+
+import React, { Suspense, lazy, useEffect, useState } from 'react';
+import logo from "@/assets/Dragonis_text.png";
 import Logo from "@/components/Logo";
 import Contact from "@/pages/Contact";
 import { Link } from 'react-router-dom';
 import Loading from '@/components/Loading';
 import line from "@/assets/line.png";
-import {useSpring, animated} from "react-spring"
+import {useSpring, animated} from "react-spring";
 import nftman from "@/assets/3.png";
-import Logos3D from "@/components/logos3d";
+
 import Spinner from '@/components/Spinner';
 
+{/* 
+import Gallery from '@/components/Gallery';
+import Hero3D from '@/components/Hero3D';
+import Logos3D from "@/components/logos3d";
+*/}
 import bb from "@/assets/bb.png";
 import aa from "@/assets/aa.png";
 import aaGif from '@/assets/cc.gif';
 import bbGif from '@/assets/dd.gif';
 
-import { gsap } from "gsap";
+const Hero3D = lazy(() => import('../components/Hero3D'));
+const Logos3D = lazy(() => import('../components/Logos3D'));
+const Gallery = lazy(() => import('../components/Gallery'));
 
 const scrollToReleases = () => {
   const releasesElement = document.getElementById('gallery');
@@ -36,7 +43,7 @@ function Threed() {
 
 
 
-  })
+  });
 
   const [isImage1Hovered, setImage1Hovered] = useState(false);
   const [isImage2Hovered, setImage2Hovered] = useState(false);
@@ -103,10 +110,12 @@ function Threed() {
 
   return (
 
+    <Suspense fallback={<Spinner />}>
       <div>
         <Logos3D />
-      <div className='pt-4'></div>
-      <div className=' bg-cover bg-center flex md:flex-row flex-col max-w-[1400px] min-h-[520px] justify-between items-center ' style={{ backgroundImage: "url('./8.png')" }}>
+        <Hero3D/>
+      {/* 
+      <div className='pt-4 bg-cover bg-center flex md:flex-row flex-col max-w-[1400px] min-h-[520px] justify-between items-center ' style={{ backgroundImage: "url('./8.png')" }}>
 
           <div className='md:w-[35%] w-[45%] mx-6 my-6 '>
           <a href='https://www.instagram.com/dragonis_art/' target='blank'><img className='nft-man rounded-3xl' src={nftman} /></a>
@@ -125,7 +134,8 @@ function Threed() {
             <Link to='#gallery'><button className='button-main2 w-full sm:w-fit font-poppins font-semibold btn px-5 py-2 my-5 rounded-lg' onClick={scrollToReleases}>My Gallery</button></Link>
             <Link to='/Contact'><button className='button-secondary ml-0 w-full sm:w-fit font-poppins font-semibold btn px-5 py-2 sm:ml-12 sm:w-1/3 rounded-lg'>Hire Me</button></Link>
           </div>
-        </div>
+        </div> 
+      */}
 
         <div className='pt-12' onClick={() => window.open('https://skinwaste.com/en/elite', '_blank')}>
           <div  className='image-container'>
@@ -206,16 +216,14 @@ function Threed() {
         </div>
 
         <div>
-          {/* Rest of the code... */}
-          {isGalleryLoaded ? ( // Conditionally render the gallery component after images have finished loading
+          
             <div className='pb-28 mb-10 pt-4 mt-8'>
               <Gallery />
             </div>
-          ) : (
-            <Spinner /> // Show a loading indicator while images are being loaded
-          )}
+          
         </div>
       </div>
+    </Suspense>
 
   );
 }

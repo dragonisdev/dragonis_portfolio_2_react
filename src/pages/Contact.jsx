@@ -59,8 +59,8 @@ function About() {
             You can follow me or message me below!
 
           </p>
-          <a href="https://www.instagram.com/dragonis_music/"><button className='button-main3 w-full sm:w-1/3  font-poppins font-semibold btn px-5 py-2 my-5 rounded-lg' >Follow Me</button></a>
-            <Link to='#contact'><button className='button-secondary ml-0 w-full sm:w-fit font-poppins font-semibold btn px-5 py-2 sm:ml-12 sm:w-1/3   rounded-lg' onClick={scrollToReleases}>Contact</button></Link>
+          <a href="https://www.instagram.com/dragonis_music/" target="_blank"><button className='button-main3 w-full sm:w-1/3  font-poppins font-semibold btn px-5 py-2 my-5 rounded-lg' >Follow Me</button></a>
+            <Link to='#contact' ><button className='button-secondary ml-0 w-full sm:w-fit font-poppins font-semibold btn px-5 py-2 sm:ml-12 sm:w-1/3   rounded-lg' onClick={scrollToReleases}>Contact</button></Link>
         </div>
       </div>
 

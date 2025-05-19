@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import close from "@/assets/close.png"
-import Spinner from '@/components/Spinner'
+import close from "@/assets/close.png";
+import Spinner from '@/components/Spinner';
 // Generate an array of image import promises dynamically
 function Gallery() {
     const [data, setData] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     const [model, setModel] = useState(false)
-    const [tempimgSrc, setTempImgSrc] = useState('')
+    const [tempimgSrc, setTempImgSrc] = useState('');
 
 
     const getImg = (imgSrc) => {
-        setTempImgSrc(imgSrc)
-        setModel(true)
-        console.warn(imgSrc)
+        setTempImgSrc(imgSrc);
+        setModel(true);
+        console.warn(imgSrc);
 
     }
 
