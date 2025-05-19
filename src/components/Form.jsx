@@ -58,8 +58,8 @@ function Form() {
         <label className="form-label" htmlFor="message">Message</label>
         <textarea className="form-textarea" name="message" id="message" required />
 
-        <div className='my-4'>
-          <ReCAPTCHA sitekey={recapthca}
+        <div className='my-4 flex justify-center'>
+          <ReCAPTCHA  sitekey={recapthca}
             onChange={handleCaptchaToken}
           />
         </div>
