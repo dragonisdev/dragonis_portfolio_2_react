@@ -1,4 +1,4 @@
-import React, { useEffect, useState, lazy, Suspense } from 'react'
+import React, { useEffect, useState, lazy, Suspense, useCallback } from 'react'
 import logo from "@/assets/Dragonis_text.png"
 import {Link} from 'react-router-dom'
 import {useSpring, animated} from "react-spring"
@@ -17,26 +17,26 @@ function HeroSection() {
   const [flip, setFlip] = useState(false);
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
-  useEffect(() => {
-    // Preload critical images
-    const preloadImages = async () => {
-      const imagePromises = [
-        new Promise((resolve) => {
-          const img = new Image();
-          img.src = logo;
-          img.onload = resolve;
-        }),
-        new Promise((resolve) => {
-          const img = new Image();
-          img.src = "/group10.png";
-          img.onload = resolve;
-        })
-      ];
-      await Promise.all(imagePromises);
-      setImagesLoaded(true);
-    };
-    preloadImages();
+  const preloadImages = useCallback(async () => {
+    const imagePromises = [
+      new Promise((resolve) => {
+        const img = new Image();
+        img.src = logo;
+        img.onload = resolve;
+      }),
+      new Promise((resolve) => {
+        const img = new Image();
+        img.src = "/group10.png";
+        img.onload = resolve;
+      })
+    ];
+    await Promise.all(imagePromises);
+    setImagesLoaded(true);
   }, []);
+
+  useEffect(() => {
+    preloadImages();
+  }, [preloadImages]);
 
   const props = useSpring({
     to: { opacity: 1, translateX: '0%'},
@@ -44,13 +44,14 @@ function HeroSection() {
     reset: true,
     reverse: flip,
     delay: 500,
+    config: { tension: 170, friction: 26 }
   });
 
   const props2 = useSpring({
     to: { opacity: 1, translateX: '0%'},
     from: { opacity: 0, translateX: '100%'},
     config: { tension: 170, friction: 26 },
-    delay: 500,
+    delay: 500
   });
 
   if (!imagesLoaded) {

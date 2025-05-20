@@ -14,26 +14,12 @@ function Gallery() {
     };
 
     useEffect(() => {
-        const importImages = async () => {
-            const importPromises = [];
-            for (let i = 1; i <= 61; i++) {
-                importPromises.push(import(`@/gallery/${i}.jpg`));
-            }
-            try {
-                const importedImages = await Promise.all(importPromises);
-                const imageUrls = importedImages.map((image) => image.default);
-                const shuffledData = imageUrls.map((imgSrc, index) => ({
-                    id: index + 1,
-                    imgSrc,
-                })).sort(() => Math.random() - 0.5);
-                setData(shuffledData);
-                setIsLoading(false);
-            } catch (error) {
-                console.error('Error loading images:', error);
-            }
-        };
-
-        importImages();
+        const imageUrls = Array.from({ length: 87 }, (_, i) => `/gallery/${i + 1}.jpg`);
+        const shuffledData = imageUrls
+            .map((imgSrc, index) => ({ id: index + 1, imgSrc }))
+            .sort(() => Math.random() - 0.5);
+        setData(shuffledData);
+        setIsLoading(false);
     }, []);
 
     return (
@@ -43,7 +29,7 @@ function Gallery() {
                     <Spinner />
                 ) : (
                     <>
-                        <img src={tempimgSrc} alt="Selected artwork" />
+                        <img src={tempimgSrc} alt="Preview" />
                         <img 
                             className="close2" 
                             src={close} 
@@ -63,7 +49,7 @@ function Gallery() {
                         <img 
                             src={item.imgSrc} 
                             className="w-full" 
-                            alt={`Artwork ${item.id}`}
+                            alt={`Image ${item.id}`}
                             loading="lazy"
                         />
                     </div>

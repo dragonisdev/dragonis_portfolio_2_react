@@ -8,17 +8,26 @@ import Links from "@/components/Links";
 import Loading from '@/components/Loading';
 import { Analytics } from '@vercel/analytics/react';
 
-// Lazy load route components
+// Preload critical components
 const HeroSection = lazy(() => import('./components/Hero'));
-const Threed = lazy(() => import('@/pages/3D'));
-const Contact = lazy(() => import('@/pages/Contact'));
-const Services = lazy(() => import('./pages/Services'));
-const Webdev = lazy(() => import('./pages/Webdev'));
+
+// Lazy load non-critical route components with prefetch
+const Threed = lazy(() => import(/* webpackPrefetch: true */ '@/pages/3D'));
+const Contact = lazy(() => import(/* webpackPrefetch: true */ '@/pages/Contact'));
+const Services = lazy(() => import(/* webpackPrefetch: true */ './pages/Services'));
+const Webdev = lazy(() => import(/* webpackPrefetch: true */ './pages/Webdev'));
+
+// Create a loading boundary component
+const LoadingBoundary = ({ children }) => (
+  <Suspense fallback={<Loading />}>
+    {children}
+  </Suspense>
+);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <Navbar />
-    <Suspense fallback={<Loading />}>
+    <LoadingBoundary>
       <Routes>
         <Route path='/' element={<HeroSection />} />
         <Route path='/webdev' element={<Webdev />} />
@@ -26,7 +35,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/services' element={<Services />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
-    </Suspense>
+    </LoadingBoundary>
     <Links />
     <Analytics />
   </BrowserRouter>
