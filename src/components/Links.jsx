@@ -20,7 +20,7 @@ function Links() {
             
         ))}
         </div>
-        <p className='font-regular text-white text-[16px] opacity-50 w-full tracking-widest footertext'>built in react.js with unparalleled determination</p>
+        <p className='font-regular text-white text-[16px] opacity-50 w-full tracking-widest footertext text-center'>built in react.js with unparalleled determination</p>
       </div>
     </div>
   );

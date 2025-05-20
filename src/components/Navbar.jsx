@@ -38,7 +38,7 @@ function Nav() {
   return (
     <nav className='navbar'>
       {/* MOBILE NAV */}
-      <div>
+      
 
           
 
@@ -98,7 +98,7 @@ function Nav() {
           </div>
         </div>
 
-      </div>
+      
     </nav>
   );
 }
