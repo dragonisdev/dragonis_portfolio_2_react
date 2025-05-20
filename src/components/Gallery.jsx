@@ -20,7 +20,7 @@ function Gallery() {
       const importImages = async () => {
         const importPromises = [];
         for (let i = 1; i <= 61; i++) {
-          importPromises.push(import(`@/gallery/${i}.png`));
+          importPromises.push(import(`@/gallery/${i}.jpg`));
         }
         try {
           const importedImages = await Promise.all(importPromises);
