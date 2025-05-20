@@ -1,6 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import close from "@/assets/close.png";
 import Spinner from '@/components/Spinner';
+
+// Move image URLs outside component to prevent recreation on each render
+const imageUrls = Array.from({ length: 87 }, (_, i) => `/gallery/${i + 1}.jpg`);
 
 function Gallery() {
     const [data, setData] = useState([]);
@@ -13,14 +16,17 @@ function Gallery() {
         setModel(true);
     };
 
-    useEffect(() => {
-        const imageUrls = Array.from({ length: 87 }, (_, i) => `/gallery/${i + 1}.jpg`);
-        const shuffledData = imageUrls
+    // Use useMemo to prevent unnecessary shuffling
+    const shuffledData = useMemo(() => {
+        return imageUrls
             .map((imgSrc, index) => ({ id: index + 1, imgSrc }))
             .sort(() => Math.random() - 0.5);
+    }, []);
+
+    useEffect(() => {
         setData(shuffledData);
         setIsLoading(false);
-    }, []);
+    }, [shuffledData]);
 
     return (
         <>
@@ -29,12 +35,18 @@ function Gallery() {
                     <Spinner />
                 ) : (
                     <>
-                        <img src={tempimgSrc} alt="Preview" />
+                        <img 
+                            src={tempimgSrc} 
+                            alt="Preview" 
+                            loading="lazy"
+                            decoding="async"
+                        />
                         <img 
                             className="close2" 
                             src={close} 
                             onClick={() => setModel(false)} 
                             alt="Close"
+                            loading="eager"
                         />
                     </>
                 )}
@@ -51,6 +63,9 @@ function Gallery() {
                             className="w-full" 
                             alt={`Image ${item.id}`}
                             loading="lazy"
+                            decoding="async"
+                            width="300"
+                            height="200"
                         />
                     </div>
                 ))}
