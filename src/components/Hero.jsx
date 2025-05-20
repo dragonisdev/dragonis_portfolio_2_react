@@ -64,7 +64,7 @@ function HeroSection() {
         <animated.div style={props}>
           <div className='mx-6 mb-7 text-center sm:text-left'>
             <h1 className="text-left font-poppins font-bold ss:text-[80px] text-[29px] ss:leading-[100.8px] leading-[75px] w-full xs:text-[52px] text-center bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-transparent">
-              Hey guys, I'm
+              Hey guys, I’m
             </h1>
             <Link to='/'><img src={logo} className="w-full max-w-[550px] xs:mb-0 mb-4" loading="eager" alt="Dragonis Logo"/></Link>
             <p className='font-semibold text-white text-[18px] max-w-[47ch]'>

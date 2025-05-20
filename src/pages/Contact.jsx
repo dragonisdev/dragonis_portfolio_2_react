@@ -47,10 +47,10 @@ function About() {
   return (
     <animated.div style = {props}><div className="md:pt-6 pt-0 ">
       <div className="gradientbackground flex lg:flex-row flex-col justify-center lg:justify-between items-center lg:py-8  rounded-3xl " >
-        <img className="lg:ml-12 mx-4 px-2 py-4 rounded-3xl" src={Frame} />
+        <img className="lg:ml-12 mx-4 px-2 pt-4 rounded-3xl" src={Frame} />
 
         <div className="lg:mr-12 mx-6  mb-7 text-center lg:text-left">
-          <h1 className="font-poppins font-bold ss:text-[70px] lg:text-[90px]  xs:text-[64px] text-[32px] text-white ss:leading-[100.8px] leading-[75px] w-full">
+          <h1 className="font-poppins font-bold ss:text-[70px] lg:text-[90px]  xs:text-[64px] text-[32px] text-white pt-4 w-full">
             My Story
           </h1>
           <a href="https://www.youtube.com/watch?v=Zucr7blqHiE" target="blank">
@@ -58,8 +58,8 @@ function About() {
               "I lost the thought of life and love, to the wonders sky above"
             </h3>
           </a>
-          <p className="font-medium opacity-90 text-white text-left text-[18px] max-w-[59ch] pt-6">
-          I’m a passionate creator dedicated to making art and music. I'm always pushing to explore new ideas,
+          <p className="font-medium opacity-90 text-white text-left text-[18px] max-w-[59ch] pt-4">
+          I'm a passionate creator dedicated to making art and music. I'm always pushing to explore new ideas,
           and even if I never reach everyone, I'm grateful that you're here listening to my work.
           Thank you for listening and being part of this journey — it truly means a lot.
           <br />
@@ -76,9 +76,11 @@ function About() {
       </div>
 
       <div className="  flex  flex-col justify-center  items-center pb-20">
-          <h1 id="contact" className="text-dragonis font-poppins font-bold ss:text-[80px] lg:text-[90px]  xs:text-[64px] text-[32px] text-white ss:leading-[100.8px] leading-[75px] w-full ss:pt-20 pt-12">
-            Contact Me
-          </h1>
+          <div className="relative w-full h-full ss:pt-24 pt-12 banner">
+            <h1 className="font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full xs:text-[52px] text-center text-dragonis pt-2">
+              My Story
+            </h1>
+          </div>
 
           <div >
             <Form/>

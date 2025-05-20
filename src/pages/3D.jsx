@@ -1,4 +1,3 @@
-
 import React, { Suspense, lazy, useEffect, useState } from 'react';
 import logo from "@/assets/Dragonis_text.png";
 import Logo from "@/components/SplineLogo";
@@ -153,11 +152,11 @@ function Threed() {
         </div>
         </animated.div> */}
 
-        <div className="relative w-full h-full ss:pt-28 pt-12 banner pb-2">
-          <h1 id='gallery' className='text-left font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full xs:text-[52px] text-center text-dragonis'>
+        <div className="relative w-full h-full ss:pt-24 pt-12 banner ">
+          <h1 id='gallery' className='font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full xs:text-[52px] text-center text-dragonis pt-2'>
             My Gallery
           </h1>
-          <div className='text-white font-semibold pt-2 text-[18px]'>Welcome to my world, to my escape</div>
+          <div className='text-white font-semibold text-[18px]'>Welcome to my world, to my escape</div>
         </div>
 
         <div>
