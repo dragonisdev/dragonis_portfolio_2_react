@@ -23,7 +23,7 @@ const Hero3D = ({scrollToReleases}) => {
   return (
     <div
       className='pt-4 bg-cover bg-center flex md:flex-row flex-col max-w-[1400px] min-h-[520px] justify-between items-center'
-      style={{ backgroundImage: "url('./8.png')" }}
+      style={{ backgroundImage: "url('./8.2.png')" }}
     >
       <div className='md:w-[35%] w-[45%] mx-6 my-6'>
         <a href='https://www.instagram.com/dragonis_art/' target='_blank' rel='noopener noreferrer'>
