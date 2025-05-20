@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import close from "@/assets/close.png";
 import Spinner from '@/components/Spinner';
 
@@ -7,14 +7,11 @@ function Gallery() {
     const [isLoading, setIsLoading] = useState(true);
     const [model, setModel] = useState(false);
     const [tempimgSrc, setTempImgSrc] = useState('');
-    const [visibleImages, setVisibleImages] = useState([]);
-    const [page, setPage] = useState(1);
-    const imagesPerPage = 12;
 
-    const getImg = useCallback((imgSrc) => {
+    const getImg = (imgSrc) => {
         setTempImgSrc(imgSrc);
         setModel(true);
-    }, []);
+    };
 
     useEffect(() => {
         const importImages = async () => {
@@ -30,7 +27,6 @@ function Gallery() {
                     imgSrc,
                 })).sort(() => Math.random() - 0.5);
                 setData(shuffledData);
-                setVisibleImages(shuffledData.slice(0, imagesPerPage));
                 setIsLoading(false);
             } catch (error) {
                 console.error('Error loading images:', error);
@@ -39,28 +35,6 @@ function Gallery() {
 
         importImages();
     }, []);
-
-    const loadMoreImages = useCallback(() => {
-        const nextPage = page + 1;
-        const startIndex = 0;
-        const endIndex = nextPage * imagesPerPage;
-        setVisibleImages(data.slice(startIndex, endIndex));
-        setPage(nextPage);
-    }, [data, page]);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (
-                window.innerHeight + document.documentElement.scrollTop
-                === document.documentElement.offsetHeight
-            ) {
-                loadMoreImages();
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, [loadMoreImages]);
 
     return (
         <>
@@ -80,7 +54,7 @@ function Gallery() {
                 )}
             </div>
             <div className="gallery">
-                {visibleImages.map((item) => (
+                {data.map((item) => (
                     <div 
                         className="pics py-2" 
                         key={item.id} 
