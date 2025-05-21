@@ -68,7 +68,7 @@ function HeroSection() {
             </h1>
             <Link to='/'><img src={logo} className="w-full max-w-[550px] xs:mb-0 mb-4" loading="eager" alt="Dragonis Logo"/></Link>
             <p className='font-semibold text-white text-[18px] max-w-[47ch]'>
-              Welcome to my heavenly domain! Here, I produce EDM music, bring 3D art to life, and code in my dreams into reality - all from my bedroom.
+              Welcome to my heavenly domain! Here, I produce EDM music, bring 3D art to life, and code my dreams into reality - all from my bedroom.
               Listen to my life's journey in chase for bluer skies, and untold adventures!
             </p>
             <Link><button className='button-main w-full sm:w-fit font-poppins font-semibold btn px-5 py-2 my-5 sm:w-1/3 rounded-lg' onClick={scrollToReleases}>My Releases</button></Link>
