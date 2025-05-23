@@ -29,8 +29,8 @@ function Nav() {
   const handleLinkClick = () => {
     setIsOpen(false);
     setToggle(false);
-    document.body.style.overflow = 'unset'
-  }
+    document.body.style.overflow = 'unset';
+  };
 
   
   
