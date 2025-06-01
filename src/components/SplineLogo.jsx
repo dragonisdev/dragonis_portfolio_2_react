@@ -3,12 +3,26 @@ import Spline from '@splinetool/react-spline';
 
 function Logo() {
   return (
-    <div >
-        <Spline className='max-w-[300px] max-h-[300px] xs:max-w-[400px] xs:max-h-[400px]' scene="https://prod.spline.design/MOtgpb9D-NTXAv3f/scene.splinecode" />
+    <div className="spline-container">
+      <Spline 
+        scene="https://prod.spline.design/MOtgpb9D-NTXAv3f/scene.splinecode"
+        className="spline-component"
+      />
+      <style jsx>{`
+        .spline-container canvas {
+          width: 300px !important;
+          height: 300px !important;
+        }
+        
+        @media (min-width: 480px) {
+          .spline-container canvas {
+            width: 400px !important;
+            height: 400px !important;
+          }
+        }
+      `}</style>
     </div> 
   )
 }
 
 export default Logo
-
-
