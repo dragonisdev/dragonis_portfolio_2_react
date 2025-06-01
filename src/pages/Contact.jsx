@@ -78,7 +78,7 @@ function About() {
       <div className="  flex  flex-col justify-center  items-center pb-20">
           <div className="relative w-full h-full ss:pt-24 pt-12 banner">
             <h1 className="font-poppins font-bold ss:text-[80px] text-[29px] text-white ss:leading-[100.8px] leading-[75px] w-full xs:text-[52px] text-center text-dragonis pt-2">
-              My Story
+              Contact Me
             </h1>
           </div>
 
