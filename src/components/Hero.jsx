@@ -16,6 +16,13 @@ const scrollToReleases = () => {
 function HeroSection() {
   const [flip, setFlip] = useState(false);
   const [imagesLoaded, setImagesLoaded] = useState(false);
+  const [searchInput, setSearchInput] = useState('');
+  const [search, setSearch] = useState('');
+
+  useEffect(() => {
+    const timer = setTimeout(() => setSearch(searchInput), 400);
+    return () => clearTimeout(timer);
+  }, [searchInput]);
 
   const preloadImages = useCallback(async () => {
     const imagePromises = [
@@ -41,7 +48,6 @@ function HeroSection() {
   const props = useSpring({
     to: { opacity: 1, translateX: '0%'},
     from: { opacity: 0, translateX: '-100%'},
-    reset: true,
     reverse: flip,
     delay: 500,
     config: { tension: 170, friction: 26 }
@@ -96,7 +102,28 @@ function HeroSection() {
       <animated.div style={props}>
         <div className="page2 flex content-center pb-28">
           <div className='art-box flex content-center flex-wrap'>
-            {songs.map((song, index) => (
+            {/* Search bar */}
+            <div className="w-full flex justify-center mb-6 px-4">
+              <div className="relative w-full max-w-md">
+                <input
+                  type="text"
+                  placeholder="Search releases..."
+                  value={searchInput}
+                  onChange={e => setSearchInput(e.target.value)}
+                  className="w-full bg-transparent border-b border-white/30 focus:white/40 outline-none text-white font-poppins text-[16px] py-2 px-1 placeholder-white/30 transition-colors duration-200"
+                />
+                {searchInput && (
+                  <button
+                    onClick={() => { setSearchInput(''); setSearch(''); }}
+                    className="absolute right-1 top-1/2 -translate-y-1/2 text-white/40 hover:text-white transition-colors duration-150 text-lg leading-none"
+                    aria-label="Clear search"
+                  >
+                    ×
+                  </button>
+                )}
+              </div>
+            </div>
+            {[...songs].sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate)).filter(s => s.title.toLowerCase().includes(search.toLowerCase())).map((song, index) => (
               <div className='art my-8 mx-4' key={index}>
                 <a href={song.streamUrl} className='cover-art' target='_blank' rel="noreferrer">
                   <img className="rounded-lg" src={song.cover} alt={song.title} loading="lazy" />
@@ -111,6 +138,9 @@ function HeroSection() {
                 </div>
               </div>
             ))}
+            {search && [...songs].filter(s => s.title.toLowerCase().includes(search.toLowerCase())).length === 0 && (
+              <p className="w-full text-center text-white/40 font-poppins text-[16px] py-12">No releases found for "{search}"</p>
+            )}
           </div>
         </div>
       </animated.div>
