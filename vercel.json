@@ -1,8 +1,1 @@
-{
-  "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }],
-  "build": {
-    "env": {
-      "NODE_VERSION": "22"
-    }
-  }
-}
+{ "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }] }
